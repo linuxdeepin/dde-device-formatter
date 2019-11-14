@@ -43,7 +43,7 @@ void CMDManager::process(const QApplication &app)
 void CMDManager::init()
 {
     m_parser.addOption(m_modelModeOpt);
-    m_parser.setApplicationDescription("Usb Device Formatter");
+    m_parser.setApplicationDescription("Device Formatter");
     m_parser.addPositionalArgument("device-path", "The external device path to format. (required)");
     m_parser.addHelpOption();
     m_parser.addVersionOption();

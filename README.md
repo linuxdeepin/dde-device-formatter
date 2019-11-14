@@ -1,4 +1,4 @@
-### usb-device-formatter
+### dde-device-formatter
 
 A simple graphical interface for creating file system in a block device.
 Originally a subproject of dde-file-manager.
@@ -35,4 +35,4 @@ We encourage you to report issues and contribute changes
 
 ## License
 
-usb-device-formatter is licensed under [GPLv3](LICENSE)
+dde-device-formatter is licensed under [GPLv3](LICENSE)

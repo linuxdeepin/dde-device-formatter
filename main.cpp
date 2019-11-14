@@ -53,46 +53,24 @@ int main(int argc, char *argv[])
     qDBusRegisterMetaType<QPair<bool,QString>>();
     qDBusRegisterMetaType<QByteArrayList>();
 
-    //Init Environment
-    qputenv("QT_IM_MODULE", "xim");
-    qputenv("GTK_IM_MODULE", "xim");
-    qputenv("QT4_IM_MODULE", "xim");
-    qputenv("IM_CONFIG_PHASE", "1");
-    qputenv("XMODIFIERS", "@im");
-    qputenv("IBUS_DISABLE_SNOOPER", "1");
-    qputenv("QT_LINUX_ACCESSIBILITY_ALWAYS_ON", "1");
-    qputenv("WINDOWPATH","2");
-    qputenv("XDG_SESSION_TYPE","x11");
-    qputenv("PAGER", "less");
-    qputenv("PAGER", "-R");
-    qputenv("SHLVL", "1");
-    qputenv("DBUS_STARTER_BUS_TYPE", "session");
-    qputenv("GDMSESSION", "deepin");
-    qputenv("DESKTOP_SESSION", "deepin");
-
-    if (qEnvironmentVariableIsSet("PKEXEC_UID")) {
-        const quint32 pkexecUID = qgetenv("PKEXEC_UID").toUInt();
-        DApplication::customQtThemeConfigPathByUserHome(getpwuid(pkexecUID)->pw_dir);
-    }
-
     //Load DXcbPlugin
     DApplication::loadDXcbPlugin();
     DApplication a(argc, argv);
 
     //Singleton app handle
-    bool isSingletonApp = SingletonApp::instance()->setSingletonApplication("usb-device-formatter");
+    bool isSingletonApp = SingletonApp::instance()->setSingletonApplication("dde-device-formatter");
     if(!isSingletonApp)
         return 0;
 
     //Load translation
     QTranslator *translator = new QTranslator(QCoreApplication::instance());
 
-    translator->load("/usr/share/usb-device-formatter/translations/usb-device-formatter_"
+    translator->load("/usr/share/dde-device-formatter/translations/dde-device-formatter_"
                      +QLocale::system().name()+".qm");
     a.installTranslator(translator);
 
     a.setOrganizationName("deepin");
-    a.setApplicationName("Deepin usb device formatter");
+    a.setApplicationName("Deepin device formatter");
     a.setApplicationVersion("1.0");
     a.setWindowIcon(QIcon::fromTheme("dde-file-manager", QIcon::fromTheme("system-file-manager")));
     a.setQuitOnLastWindowClosed(true);

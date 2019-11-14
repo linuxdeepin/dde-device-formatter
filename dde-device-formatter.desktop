@@ -1,7 +1,7 @@
 [Desktop Entry]
-Exec=/usr/bin/usb-device-formatter
+Exec=/usr/bin/dde-device-formatter
 Icon=usb-device-formatter
-Name=USB Device Formatter
+Name=Device Formatter
 NoShowIn=GNOME;Unity;Deepin
 Type=Application
 

@@ -8,7 +8,7 @@ QT       += core gui concurrent network x11extras dbus
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = usb-device-formatter
+TARGET = dde-device-formatter
 TEMPLATE = app
 
 PKGCONFIG += x11 udisks2-qt5 dtkwidget dtkgui
