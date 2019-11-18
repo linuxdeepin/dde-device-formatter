@@ -197,7 +197,7 @@ void MainWindow::onFormatingFinished(const bool &successful)
         if(!QFile::exists(m_formatPath)){
             m_currentStep = RemovedWhenFormattingError;
             m_comfirmButton->setText(tr("Quit"));
-            m_errorPage->setErrorMsg(tr("Your disk is removed when formatting"));
+            m_errorPage->setErrorMsg(tr("Your disk has been removed"));
         } else{
             m_currentStep = FormattError;
             m_errorPage->setErrorMsg(tr("Failed to format the device"));
