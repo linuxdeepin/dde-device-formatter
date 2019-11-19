@@ -12,30 +12,30 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="47"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>Lemez formázása folyamatban, kérem várjon...</translation>
+        <translation>Lemez formázása, kérem várjon...</translation>
     </message>
 </context>
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../view/mainpage.cpp" line="104"/>
+        <location filename="../view/mainpage.cpp" line="119"/>
         <source>Type</source>
-        <translation>Típus</translation>
+        <translation>Tipus</translation>
     </message>
     <message>
-        <location filename="../view/mainpage.cpp" line="122"/>
+        <location filename="../view/mainpage.cpp" line="137"/>
         <source>Label</source>
-        <translation>Mező</translation>
+        <translation>Címke</translation>
     </message>
     <message>
-        <location filename="../view/mainpage.cpp" line="131"/>
+        <location filename="../view/mainpage.cpp" line="146"/>
         <source>Quick Format</source>
         <translation>Gyorsformázás</translation>
     </message>
     <message>
-        <location filename="../view/mainpage.cpp" line="148"/>
+        <location filename="../view/mainpage.cpp" line="163"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>A formázás minden adatot töröl a lemezről.</translation>
+        <translation>A formázás törölni fogja az összes adatait a lemezen.</translation>
     </message>
 </context>
 <context>
@@ -47,37 +47,41 @@
         <translation>Formázás</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="161"/>
+        <location filename="../view/mainwindow.cpp" line="162"/>
         <source>Continue</source>
         <translation>Folytatás</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="166"/>
+        <location filename="../view/mainwindow.cpp" line="167"/>
         <source>Formatting...</source>
         <translation>Formázás...</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="191"/>
+        <location filename="../view/mainwindow.cpp" line="193"/>
         <source>Done</source>
-        <translation>Elkészült</translation>
+        <translation>Kész</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="197"/>
+        <location filename="../view/mainwindow.cpp" line="199"/>
         <source>Quit</source>
         <translation>Kilépés</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="198"/>
-        <source>Your disk is removed when formatting</source>
-        <translation>A lemez eltávolítása formázás közben</translation>
-    </message>
-    <message>
-        <location filename="../view/mainwindow.cpp" line="201"/>
-        <source>Failed to format the device</source>
+        <location filename="../view/mainwindow.cpp" line="200"/>
+        <source>Your disk has been removed</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="202"/>
+        <source>Your disk is removed when formatting</source>
+        <translation type="vanished">Formázás közben a lemezt leválasztjuk</translation>
+    </message>
+    <message>
+        <location filename="../view/mainwindow.cpp" line="203"/>
+        <source>Failed to format the device</source>
+        <translation>Nem sikerült leformázni az eszközt.</translation>
+    </message>
+    <message>
+        <location filename="../view/mainwindow.cpp" line="204"/>
         <source>Reformat</source>
         <translation>Újraformázás</translation>
     </message>
@@ -95,30 +99,30 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="55"/>
         <source>System Disk</source>
-        <translation type="unfinished"/>
+        <translation>Rendszerlemez</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="59"/>
         <source>%1 Encrypted</source>
-        <translation type="unfinished"/>
+        <translation>%1 Titkosítva</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="61"/>
         <source>%1 Volume</source>
-        <translation type="unfinished"/>
+        <translation>%1 Terjedelem</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="112"/>
+        <location filename="../main.cpp" line="90"/>
         <source>Device does not exist</source>
-        <translation>Az eszköz nem létezik</translation>
+        <translation>Az eszköz nem található</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="121"/>
+        <location filename="../main.cpp" line="99"/>
         <source>The device is read-only</source>
-        <translation type="unfinished"/>
+        <translation>Az eszköz csak olvasható</translation>
     </message>
     <message>
         <source>Cannot format local device</source>
@@ -130,7 +134,7 @@
     <message>
         <location filename="../view/warnpage.cpp" line="43"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>A formázás minden adatot visszaállíthatatlanul töröl a lemezről. Biztosan folytatja?</translation>
+        <translation>A formázás le fogja törölni az összes adatát a lemezen. Biztos hogy folytatni akarja? A folyamat nem visszafordítható.</translation>
     </message>
 </context>
 </TS>

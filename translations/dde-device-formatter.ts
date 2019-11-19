@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE TS>
-<TS version="2.1" language="en">
+<?xml version="1.0" ?><!DOCTYPE TS><TS language="en" version="2.1">
 <context>
     <name>FinishPage</name>
     <message>
@@ -71,7 +69,7 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="200"/>
         <source>Your disk has been removed</source>
-        <translation type="unfinished"></translation>
+        <translation>Your disk has been removed</translation>
     </message>
     <message>
         <source>Your disk is removed when formatting</source>

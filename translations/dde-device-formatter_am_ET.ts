@@ -18,22 +18,22 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../view/mainpage.cpp" line="104"/>
+        <location filename="../view/mainpage.cpp" line="119"/>
         <source>Type</source>
         <translation>አይነት</translation>
     </message>
     <message>
-        <location filename="../view/mainpage.cpp" line="122"/>
+        <location filename="../view/mainpage.cpp" line="137"/>
         <source>Label</source>
-        <translation>ምልክት</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../view/mainpage.cpp" line="131"/>
+        <location filename="../view/mainpage.cpp" line="146"/>
         <source>Quick Format</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../view/mainpage.cpp" line="148"/>
+        <location filename="../view/mainpage.cpp" line="163"/>
         <source>Formatting will erase all data on the disk.</source>
         <translation type="unfinished"/>
     </message>
@@ -44,42 +44,46 @@
         <location filename="../view/mainwindow.cpp" line="88"/>
         <location filename="../view/mainwindow.cpp" line="106"/>
         <source>Format</source>
-        <translation>አቀራረብ</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="161"/>
+        <location filename="../view/mainwindow.cpp" line="162"/>
         <source>Continue</source>
         <translation>ይቀጥሉ</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="166"/>
+        <location filename="../view/mainwindow.cpp" line="167"/>
         <source>Formatting...</source>
-        <translation>በ ማሰናዳት ላይ...</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="191"/>
+        <location filename="../view/mainwindow.cpp" line="193"/>
         <source>Done</source>
-        <translation>ጨርሷል</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="197"/>
+        <location filename="../view/mainwindow.cpp" line="199"/>
         <source>Quit</source>
-        <translation>ማጥፊያ</translation>
+        <translation>ማቋረጫ</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="198"/>
+        <location filename="../view/mainwindow.cpp" line="200"/>
+        <source>Your disk has been removed</source>
+        <translation type="unfinished"/>
+    </message>
+    <message>
         <source>Your disk is removed when formatting</source>
-        <translation>የ እርስዎን ዲስክ በ ማሰናዳት ላይ እንዳለ ወልቋል</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="201"/>
+        <location filename="../view/mainwindow.cpp" line="203"/>
         <source>Failed to format the device</source>
         <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="202"/>
+        <location filename="../view/mainwindow.cpp" line="204"/>
         <source>Reformat</source>
-        <translation>እንደገና ማሰናጃ</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
@@ -105,24 +109,24 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="61"/>
         <source>%1 Volume</source>
-        <translation type="unfinished"/>
+        <translation>%1 መጠን</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="112"/>
+        <location filename="../main.cpp" line="90"/>
         <source>Device does not exist</source>
-        <translation>አካሉ አልተገኘም</translation>
+        <translation type="unfinished"/>
     </message>
     <message>
-        <location filename="../main.cpp" line="121"/>
+        <location filename="../main.cpp" line="99"/>
         <source>The device is read-only</source>
         <translation type="unfinished"/>
     </message>
     <message>
         <source>Cannot format local device</source>
-        <translation type="vanished">ይህን አካል ማሰናዳት አይቻልም</translation>
+        <translation type="unfinished"/>
     </message>
 </context>
 <context>
