@@ -12,7 +12,7 @@ Originally a subproject of dde-file-manager.
 * Qt5(>= 5.6) with modules:
   - qtbase5-dev
   - qt5-qmake
-* Deepin-tool-kit(>=2.0) with modules:
+* Deepin-toolkit(>=5.0) with modules:
   - libdtkwidget-dev
   - libdtkgui-dev
 * libudisks2-qt5-dev
@@ -31,7 +31,7 @@ We encourage you to report issues and contribute changes
 
  - [Contribution guide for developers](https://github.com/linuxdeepin/developer-center/wiki/Contribution-Guidelines-for-Developers-en) (English)
  - [开发者代码贡献指南](https://github.com/linuxdeepin/developer-center/wiki/Contribution-Guidelines-for-Developers) (中文)
- - [Translate for your language on Transifex](https://www.transifex.com/linuxdeepin/deepin-file-manager/)
+ - [Translate for your language on Transifex](https://www.transifex.com/linuxdeepin/deepin-device-formatter/)
 
 ## License
 
