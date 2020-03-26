@@ -79,18 +79,6 @@ void MainWindow::initUI()
     QString XDG_SESSION_TYPE = e.value(QStringLiteral("XDG_SESSION_TYPE"));
     QString WAYLAND_DISPLAY = e.value(QStringLiteral("WAYLAND_DISPLAY"));
 
-    if (XDG_SESSION_TYPE == QLatin1String("wayland") ||
-                    WAYLAND_DISPLAY.contains(QLatin1String("wayland"), Qt::CaseInsensitive)) {
-
-        //wayland mode
-        setWindowFlags(Qt::WindowCloseButtonHint |
-                       Qt::Dialog |
-                       Qt::FramelessWindowHint);
-    } else {
-        //x11 mode
-        setWindowFlags(Qt::WindowCloseButtonHint |
-                       Qt::Dialog);
-    }
 
     QVBoxLayout* mainLayout = new QVBoxLayout;
     mainLayout->setContentsMargins(0, 2, 0, 0);
