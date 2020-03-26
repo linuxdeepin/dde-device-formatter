@@ -142,6 +142,12 @@ void MainWindow::initConnect()
             connect(m_job.data(), &DUDisksJob::completed, [this](bool r, QString){this->onFormatingFinished(r);});
         }
     });
+    connect(m_diskm.data(), &DDiskManager::diskDeviceRemoved, this, [this](QString path) {
+        qDebug() << "device " << path << "removed";
+        this->close();
+        this->deleteLater();
+        exit(0);
+    });
 }
 
 void MainWindow::formatDevice()
