@@ -98,6 +98,8 @@ private:
     QScopedPointer<DUDisksJob> m_job;
     QScopedPointer<DDiskManager> m_diskm;
 
+    //模拟进度值
+    double m_simulationProgressValue;
 };
 
 #endif // DIALOG_H

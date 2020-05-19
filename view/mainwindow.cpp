@@ -61,6 +61,7 @@ MainWindow::MainWindow(const QString &path, QWidget *parent):
     m_diskm->setWatchChanges(true);
     m_formatPath = path;
     m_formatType = UDisksBlock(path).fsType();
+    m_simulationProgressValue = 0;
     if(m_formatType == "vfat")
         m_formatType = "fat32";
     initUI();
@@ -126,8 +127,45 @@ void MainWindow::initConnect()
         QScopedPointer<DUDisksJob> job(DDiskManager::createJob(jobs));
         if (job->operation().contains("format") && job->objects().contains(UDisksBlock(m_formatPath)->path())) {
             m_job.reset(DDiskManager::createJob(jobs));
-            connect(m_job.data(), &DUDisksJob::progressChanged, [this](double p){m_formatingPage->setProgress(p);});
-            connect(m_job.data(), &DUDisksJob::completed, [this](bool r, QString){this->onFormatingFinished(r);});
+            //非快速格式化按照正常进度显示
+            if (m_job->operation().contains("erase")) {
+                connect(m_job.data(), &DUDisksJob::progressChanged, [this](double p){
+                    m_formatingPage->setProgress(p);
+                });
+                connect(m_job.data(), &DUDisksJob::completed, [this](bool r, QString){
+                    this->onFormatingFinished(r);
+                });
+            }
+            //快速格式化不会收到进度更新的信号，这里模拟一个进度条增长的过程
+            else if (m_job->operation().contains("mkfs")) {
+                QTimer *timer = new QTimer();
+                m_simulationProgressValue = 0;
+                connect(timer, &QTimer::timeout, [this, timer](){
+                    m_simulationProgressValue += 0.06;
+                    if (m_simulationProgressValue < 1) {
+                        timer->start(300);
+                        m_formatingPage->setProgress(m_simulationProgressValue);
+                    }
+                    else {
+                        m_formatingPage->setProgress(0.99);
+                    }
+                });
+                timer->start(300);
+
+                connect(m_job.data(), &DUDisksJob::completed, [this, timer](bool r, QString){
+                    timer->disconnect();
+                    timer->stop();
+                    m_simulationProgressValue = 0;
+                    if (r) {
+                        m_formatingPage->setProgress(1);
+                    }
+
+                    connect(timer, &QTimer::timeout, [this, r](){
+                        this->onFormatingFinished(r);
+                    });
+                    timer->start(200);
+                });
+            }
         }
     });
     connect(m_diskm.data(), &DDiskManager::diskDeviceRemoved, this, [this](QString path) {
