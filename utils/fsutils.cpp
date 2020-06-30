@@ -77,7 +77,7 @@ QStringList FsUtils::supportedFilesystems()
     QStringList ret;
     DDiskManager diskmgr;
     for (auto &fs : diskmgr.supportedFilesystems()) {
-        if (diskmgr.canFormat(fs)) {
+        if (diskmgr.canFormat(fs) && !fs.contains("minix")) { // 底层目前不支持minix，格式化的时候UDISK2模块会一直阻塞
             ret.push_back(fs);
         }
     }
