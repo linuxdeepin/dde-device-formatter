@@ -53,8 +53,19 @@ int main(int argc, char *argv[])
     qDBusRegisterMetaType<QPair<bool,QString>>();
     qDBusRegisterMetaType<QByteArrayList>();
 
+    auto e = QProcessEnvironment::systemEnvironment();
+    QString XDG_SESSION_TYPE = e.value(QStringLiteral("XDG_SESSION_TYPE"));
+    QString WAYLAND_DISPLAY = e.value(QStringLiteral("WAYLAND_DISPLAY"));
+
+    bool isWayland = false;
+    if (XDG_SESSION_TYPE == QLatin1String("wayland") ||
+            WAYLAND_DISPLAY.contains(QLatin1String("wayland"), Qt::CaseInsensitive)) {
+        isWayland = true;
+    }
+
     //Load DXcbPlugin
-    DApplication::loadDXcbPlugin();
+    if (!isWayland)
+        DApplication::loadDXcbPlugin();
     DApplication a(argc, argv);
 
     //Singleton app handle
@@ -113,7 +124,8 @@ int main(int argc, char *argv[])
         int winId = w->winId();
 
         if(parentWinId != -1)
-            qDebug() << XSetTransientForHint(QX11Info::display(), (Window)winId, (Window)parentWinId);
+            if (!isWayland)
+                qDebug() << XSetTransientForHint(QX11Info::display(), (Window)winId, (Window)parentWinId);
     }
 
     int code = a.exec();
