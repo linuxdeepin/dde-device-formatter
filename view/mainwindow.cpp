@@ -168,11 +168,30 @@ void MainWindow::initConnect()
             }
         }
     });
-    connect(m_diskm.data(), &DDiskManager::diskDeviceRemoved, this, [this](QString path) {
-        qDebug() << "device " << path << "removed";
-        this->close();
-        this->deleteLater();
-        exit(0);
+    connect(m_diskm.data(), &DDiskManager::diskDeviceRemoved, this, [this] () {
+        bool quit = true;
+        QStringList &&blkDevStrGroup = DDiskManager::blockDevices({});
+        for (auto blkDevStr : blkDevStrGroup) {
+            QScopedPointer<DBlockDevice> blkDev(DDiskManager::createBlockDevice(blkDevStr));
+            if (blkDev) {
+                QStringList blDevStrArray = blkDevStr.split(QDir::separator());
+                QString tagName = blDevStrArray.isEmpty() ? "" : blDevStrArray.last();
+                QString devPath = "/dev/" + tagName;
+                qDebug() << "block device:" <<  devPath << "exists";
+                // 当前计算机一个块设备被移除后，检查剩余的块设备是否包含将要格式化的设备
+                // 若依然包含，则说明被移除的设备不是将要格式化的设备，因此格式化程序不退出
+                if (devPath == m_formatPath) {
+                    qDebug() << "block device:" << devPath << "not removed";
+                    quit = false;
+                }
+            }
+        }
+
+        if (quit) {
+            this->close();
+            this->deleteLater();
+            ::exit(0);
+        }
     });
 }
 
