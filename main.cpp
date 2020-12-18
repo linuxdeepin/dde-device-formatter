@@ -81,7 +81,7 @@ int main(int argc, char *argv[])
     a.installTranslator(translator);
 
     a.setOrganizationName("deepin");
-    a.setApplicationName("Deepin device formatter");
+    a.setApplicationName(QObject::tr("dde device formatter"));
     a.setApplicationVersion("1.0");
     a.setWindowIcon(QIcon::fromTheme("dde-file-manager", QIcon::fromTheme("system-file-manager")));
     a.setQuitOnLastWindowClosed(true);
