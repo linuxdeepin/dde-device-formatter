@@ -93,16 +93,11 @@ qint64 UDisksBlock::sizeUsed() const
     }
 
     QString mp;
-    if (rblk->mountPoints().empty()) {
-        mp = rblk->mount({{"auth.no_user_interaction", true}});
-        if (rblk->lastError().isValid()) {
-            mp.clear();
-        }
-    } else {
+    if (!rblk->mountPoints().empty()) {
         mp = rblk->mountPoints().front();
     }
 
-    if (!mp.length()) {
+    if (mp.isEmpty()) {
         return -1;
     }
 
