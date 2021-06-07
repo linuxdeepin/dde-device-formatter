@@ -214,6 +214,12 @@ void MainWindow::formatDevice()
         QVariantMap opt = {{"label", m_mainPage->getLabel()}};
         if (m_mainPage->shouldErase()) opt["erase"] = "zero";
         blk->format(m_mainPage->getSelectedFs(), opt);
+        QDBusError lastError = blk->lastError();
+        if (lastError.isValid()) {
+            qWarning() << "failed to format the dev: " << blk->path() << " by: " << lastError.name() << " : " << lastError.message();
+            QMetaObject::invokeMethod(this, std::bind(&MainWindow::onFormatingFinished, this, false), Qt::ConnectionType::QueuedConnection);
+            return;
+        }
     });
 }
 
