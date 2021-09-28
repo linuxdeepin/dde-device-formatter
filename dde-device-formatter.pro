@@ -53,10 +53,14 @@ CONFIG(release, debug|release) {
 PREFIX = /usr
 BINDIR = $$PREFIX/bin
 SHAREDIR = $$PREFIX/share/$${TARGET}
+DESKTOPFILEDIR = $$PREFIX/share/applications
 
 target.path = $$BINDIR
 
 translations.files = $$PWD/translations/*.qm
 translations.path = $$SHAREDIR/translations
 
-INSTALLS += target translations
+desktopfile.files = $$PWD/dde-device-formatter.desktop
+desktopfile.path = $$DESKTOPFILEDIR
+
+INSTALLS += target translations desktopfile
