@@ -1,5 +1,6 @@
 [Desktop Entry]
 Exec=/usr/bin/dde-device-formatter
+Hidden=true
 Icon=usb-device-formatter
 Name=Device Formatter
 NoShowIn=GNOME;Unity;Deepin
