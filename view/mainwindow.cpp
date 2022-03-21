@@ -50,9 +50,9 @@
 #include <ddiskmanager.h>
 #include <dudisksjob.h>
 
-MainWindow::MainWindow(const QString &path, QWidget *parent):
-    DDialog(parent),
-    m_diskm(new DDiskManager)
+MainWindow::MainWindow(const QString &path, QWidget *parent)
+    : DDialog(parent),
+      m_diskm(new DDiskManager)
 {
     DPlatformWindowHandle handle(this);
     Q_UNUSED(handle)
@@ -62,16 +62,13 @@ MainWindow::MainWindow(const QString &path, QWidget *parent):
     m_formatPath = path;
     m_formatType = UDisksBlock(path).fsType();
     m_simulationProgressValue = 0;
-    if(m_formatType == "vfat")
-        m_formatType = "fat32";
     initUI();
-//    initStyleSheet();
+    //    initStyleSheet();
     initConnect();
 }
 
 MainWindow::~MainWindow()
 {
-
 }
 
 void MainWindow::initUI()
@@ -80,8 +77,7 @@ void MainWindow::initUI()
     QString XDG_SESSION_TYPE = e.value(QStringLiteral("XDG_SESSION_TYPE"));
     QString WAYLAND_DISPLAY = e.value(QStringLiteral("WAYLAND_DISPLAY"));
 
-
-    QVBoxLayout* mainLayout = new QVBoxLayout;
+    QVBoxLayout *mainLayout = new QVBoxLayout;
     mainLayout->setContentsMargins(0, 2, 0, 0);
 
     QPixmap pixmap(24, 24);
@@ -129,10 +125,10 @@ void MainWindow::initConnect()
             m_job.reset(DDiskManager::createJob(jobs));
             //非快速格式化按照正常进度显示
             if (m_job->operation().contains("erase")) {
-                connect(m_job.data(), &DUDisksJob::progressChanged, [this](double p){
+                connect(m_job.data(), &DUDisksJob::progressChanged, [this](double p) {
                     m_formatingPage->setProgress(p);
                 });
-                connect(m_job.data(), &DUDisksJob::completed, [this](bool r, QString){
+                connect(m_job.data(), &DUDisksJob::completed, [this](bool r, QString) {
                     this->onFormatingFinished(r);
                 });
             }
@@ -140,19 +136,18 @@ void MainWindow::initConnect()
             else if (m_job->operation().contains("mkfs")) {
                 QTimer *timer = new QTimer();
                 m_simulationProgressValue = 0;
-                connect(timer, &QTimer::timeout, [this, timer](){
+                connect(timer, &QTimer::timeout, [this, timer]() {
                     m_simulationProgressValue += 0.06;
                     if (m_simulationProgressValue < 1) {
                         timer->start(300);
                         m_formatingPage->setProgress(m_simulationProgressValue);
-                    }
-                    else {
+                    } else {
                         m_formatingPage->setProgress(0.99);
                     }
                 });
                 timer->start(300);
 
-                connect(m_job.data(), &DUDisksJob::completed, [this, timer](bool r, QString){
+                connect(m_job.data(), &DUDisksJob::completed, [this, timer](bool r, QString) {
                     timer->disconnect();
                     timer->stop();
                     m_simulationProgressValue = 0;
@@ -160,7 +155,7 @@ void MainWindow::initConnect()
                         m_formatingPage->setProgress(1);
                     }
 
-                    connect(timer, &QTimer::timeout, [this, r](){
+                    connect(timer, &QTimer::timeout, [this, r]() {
                         this->onFormatingFinished(r);
                     });
                     timer->start(200);
@@ -168,7 +163,7 @@ void MainWindow::initConnect()
             }
         }
     });
-    connect(m_diskm.data(), &DDiskManager::diskDeviceRemoved, this, [this] () {
+    connect(m_diskm.data(), &DDiskManager::diskDeviceRemoved, this, [this]() {
         bool quit = true;
         QStringList &&blkDevStrGroup = DDiskManager::blockDevices({});
         for (auto blkDevStr : blkDevStrGroup) {
@@ -177,7 +172,7 @@ void MainWindow::initConnect()
                 QStringList blDevStrArray = blkDevStr.split(QDir::separator());
                 QString tagName = blDevStrArray.isEmpty() ? "" : blDevStrArray.last();
                 QString devPath = "/dev/" + tagName;
-                qDebug() << "block device:" <<  devPath << "exists";
+                qDebug() << "block device:" << devPath << "exists";
                 // 当前计算机一个块设备被移除后，检查剩余的块设备是否包含将要格式化的设备
                 // 若依然包含，则说明被移除的设备不是将要格式化的设备，因此格式化程序不退出
                 if (devPath == m_formatPath) {
@@ -200,9 +195,9 @@ void MainWindow::formatDevice()
     DWindowManagerHelper::setMotifFunctions(windowHandle(), DWindowManagerHelper::FUNC_CLOSE, false);
     setCloseButtonVisible(false);
 
-    QtConcurrent::run([=]{
+    QtConcurrent::run([=] {
         UDisksBlock blk(m_formatPath);
-        if(!blk->mountPoints().empty()) {
+        if (!blk->mountPoints().empty()) {
             blk->unmount({});
             QDBusError lastError = blk->lastError();
             if (lastError.isValid()) {
@@ -211,7 +206,7 @@ void MainWindow::formatDevice()
                 return;
             }
         }
-        QVariantMap opt = {{"label", m_mainPage->getLabel()}};
+        QVariantMap opt = { { "label", m_mainPage->getLabel() } };
         if (m_mainPage->shouldErase()) opt["erase"] = "zero";
         blk->format(m_mainPage->getSelectedFs(), opt);
         QDBusError lastError = blk->lastError();
@@ -269,11 +264,11 @@ void MainWindow::onFormatingFinished(const bool &successful)
         m_comfirmButton->setEnabled(true);
         m_pageStack->setCurrentWidget(m_finishPage);
     } else {
-        if(!QFile::exists(m_formatPath)){
+        if (!QFile::exists(m_formatPath)) {
             m_currentStep = RemovedWhenFormattingError;
             m_comfirmButton->setText(tr("Quit"));
             m_errorPage->setErrorMsg(tr("Your disk has been removed"));
-        } else{
+        } else {
             m_currentStep = FormattError;
             m_errorPage->setErrorMsg(tr("Failed to format the device"));
             m_comfirmButton->setText(tr("Reformat"));
