@@ -1,5 +1,5 @@
 [Desktop Entry]
-Exec=/usr/bin/dde-device-formatter
+Exec=dde-device-formatter
 NoDisplay=true
 Icon=usb-device-formatter
 Name=Device Formatter
