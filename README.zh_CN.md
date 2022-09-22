@@ -35,4 +35,4 @@
 
 ## 许可证
 
-dde-device-formatter is licensed under [GPLv3](LICENSE)
+dde-device-formatter is licensed under [GPL-3.0-or-later](LICENSE)
