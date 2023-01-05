@@ -1,4 +1,10 @@
-dde-device-formatter (1.0.0) unstable; urgency=medium
+dde-device-formatter (0.0.1.6) UNRELEASED; urgency=medium
+
+  * update changelog for tag 0.0.1.6
+
+ -- Deepin Packages Builder <packages@deepin.com>  Mon, 01 Jan 2023 15:26:28 +0800
+
+dde-device-formatter (0.0.1) unstable; urgency=medium
 
   * Initial release 
 
