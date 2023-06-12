@@ -35,7 +35,7 @@ Copyright: None
 License: CC0-1.0
 
 # conf
-Files: .tx/config
+Files: .tx/config .tx/deepin.conf
 Copyright: None
 License: CC0-1.0
 
