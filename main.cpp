@@ -96,7 +96,7 @@ int main(int argc, char *argv[])
     MainWindow* w = new MainWindow(path);
     w->show();
     QRect rect = w->geometry();
-    rect.moveCenter(qApp->desktop()->geometry().center());
+    rect.moveCenter(qApp->desktop()->screenGeometry(w).center());
     w->move(rect.x(), rect.y());
 
     if(CMDManager::instance()->isSet("m")){

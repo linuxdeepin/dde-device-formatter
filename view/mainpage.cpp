@@ -118,6 +118,7 @@ void MainPage::initUI()
     labelText->setObjectName("TagLabel");
     m_labelLineEdit = new QLineEdit(this);
     m_labelLineEdit->setText(m_typeCombo->currentText());
+    m_labelLineEdit->setContextMenuPolicy(Qt::NoContextMenu);
     m_labelLineEdit->setFixedWidth(160);
 
     m_quickfmt = new QCheckBox(this);
