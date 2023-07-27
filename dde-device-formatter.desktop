@@ -3,6 +3,6 @@ Exec=/usr/bin/dde-device-formatter
 NoDisplay=true
 Icon=usb-device-formatter
 Name=Device Formatter
-NoShowIn=GNOME;Unity;Deepin
+NotShowIn=GNOME;Unity;Deepin
 Type=Application
 
