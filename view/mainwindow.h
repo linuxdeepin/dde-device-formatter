@@ -64,6 +64,11 @@ public slots:
     void nextStep();
     void onFormatingFinished(const bool& successful);
 
+protected:
+    void closeEvent(QCloseEvent *event) override;
+    void keyPressEvent(QKeyEvent *event) override;
+
+
 private:
     QPushButton* m_comfirmButton = nullptr;
     QStackedWidget* m_pageStack = nullptr;

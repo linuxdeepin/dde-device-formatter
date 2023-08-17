@@ -37,6 +37,7 @@ MainWindow::MainWindow(const QString &path, QWidget *parent)
     DPlatformWindowHandle handle(this);
     Q_UNUSED(handle)
 
+    setWindowFlags(windowFlags() | Qt::Popup);
     setObjectName("UsbDeviceFormatter");
     m_diskm->setWatchChanges(true);
     m_formatPath = path;
@@ -256,4 +257,19 @@ void MainWindow::onFormatingFinished(const bool &successful)
         m_comfirmButton->setEnabled(true);
         m_pageStack->setCurrentWidget(m_errorPage);
     }
+}
+
+void MainWindow::closeEvent(QCloseEvent *event)
+{
+    DDialog::closeEvent(event);
+
+    qApp->exit();
+}
+
+void MainWindow::keyPressEvent(QKeyEvent *event)
+{
+    if (event && event->key() == Qt::Key_Escape)
+        return;
+
+    DDialog::keyPressEvent(event);
 }
