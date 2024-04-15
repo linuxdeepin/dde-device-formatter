@@ -1,3 +1,9 @@
+dde-device-formatter (0.0.1.16) unstable; urgency=medium
+
+  * update baseline version to 0.0.1.16
+
+ -- lvwujun <lvwujun@uniontech.com>  Mon, 15 Apr 2024 15:57:10 +0800
+
 dde-device-formatter (0.0.1.15) unstable; urgency=medium
 
   * update dde-device-formatter 0.0.1.15 version
