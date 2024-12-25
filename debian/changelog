@@ -1,3 +1,10 @@
+dde-device-formatter (0.0.1.17) unstable; urgency=medium
+
+  * Auto mount after device been formatted.
+  * 
+
+ -- XuShitong <xushitong@uniontech.com>  Wed, 25 Dec 2024 15:14:40 +0800
+
 dde-device-formatter (0.0.1.16) unstable; urgency=medium
 
   * update baseline version to 0.0.1.16

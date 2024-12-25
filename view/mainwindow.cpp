@@ -244,6 +244,10 @@ void MainWindow::onFormatingFinished(const bool &successful)
         m_comfirmButton->setText(tr("Done"));
         m_comfirmButton->setEnabled(true);
         m_pageStack->setCurrentWidget(m_finishPage);
+
+        QTimer::singleShot(0, this, [this] {
+            UDisksBlock(this->m_formatPath)->mount({});
+        });
     } else {
         if (!QFile::exists(m_formatPath)) {
             m_currentStep = RemovedWhenFormattingError;
