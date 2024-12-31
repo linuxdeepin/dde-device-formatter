@@ -24,14 +24,14 @@ QString sizeString(const QString &str)
 
     QString size = str;
 
-    while (size.count() - 1 > begin_pos) {
+    while (size.size() - 1 > begin_pos) {
         if (!size.endsWith('0'))
             return size;
 
-        size = size.left(size.count() - 1);
+        size = size.left(size.size() - 1);
     }
 
-    return size.left(size.count() - 1);
+    return size.left(size.size() - 1);
 }
 
 MainPage::MainPage(const QString& defautFormat, QWidget *parent) : QWidget(parent)

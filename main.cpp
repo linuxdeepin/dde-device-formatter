@@ -2,8 +2,8 @@
 //
 // SPDX-License-Identifier: GPL-3.0-or-later
 
+#include <dplatformwindowhandle.h>
 #include <DApplication>
-#include <QDesktopWidget>
 #include <DLog>
 #include <QDebug>
 #include <QFile>
@@ -13,24 +13,35 @@
 #include <QDBusMetaType>
 #include "app/cmdmanager.h"
 #include "view/mainwindow.h"
-#include "dplatformwindowhandle.h"
 #include "dialogs/messagedialog.h"
 #include "app/singletonapp.h"
 #include "utils/udisksutils.h"
 #include <QProcessEnvironment>
-#include <QX11Info>
 #include <X11/Xlib.h>
+#include <QGuiApplication>
+#include <QScreen>
+#include <QtGui/private/qtx11extras_p.h>
+
 DCORE_USE_NAMESPACE
-//DWIDGET_BEGIN_NAMESPACE
 
 #include <pwd.h>
 
 int main(int argc, char *argv[])
 {
+    // 在创建QApplication之前设置平台主题
+    if (qgetenv("QT_QPA_PLATFORM").isEmpty()) {
+        qputenv("QT_QPA_PLATFORM", "dxcb");
+    }
+    
+    // 设置Deepin平台主题
+    if (qgetenv("QT_QPA_PLATFORMTHEME").isEmpty()) {
+        qputenv("QT_QPA_PLATFORMTHEME", "deepin");
+    }
+
     //Logger
     DLogManager::registerConsoleAppender();
 
-    qDBusRegisterMetaType<QPair<bool,QString>>();
+    qDBusRegisterMetaType<QPair<bool, QString>>();
     qDBusRegisterMetaType<QByteArrayList>();
 
     auto e = QProcessEnvironment::systemEnvironment();
@@ -38,34 +49,31 @@ int main(int argc, char *argv[])
     QString WAYLAND_DISPLAY = e.value(QStringLiteral("WAYLAND_DISPLAY"));
 
     bool isWayland = false;
-    if (XDG_SESSION_TYPE == QLatin1String("wayland") ||
-            WAYLAND_DISPLAY.contains(QLatin1String("wayland"), Qt::CaseInsensitive)) {
+    if (XDG_SESSION_TYPE == QLatin1String("wayland") || WAYLAND_DISPLAY.contains(QLatin1String("wayland"), Qt::CaseInsensitive)) {
         isWayland = true;
     }
 
-    //Load DXcbPlugin
-    if (!isWayland)
-        DApplication::loadDXcbPlugin();
     DApplication a(argc, argv);
 
     //Singleton app handle
     bool isSingletonApp = SingletonApp::instance()->setSingletonApplication("dde-device-formatter");
-    if(!isSingletonApp)
+    if (!isSingletonApp)
         return 0;
 
     //Load translation
-    QTranslator *translator = new QTranslator(QCoreApplication::instance());
+    QTranslator translator;
+    QString locale = QLocale::system().name();
+    QString qmFile = QString("%1/dde-device-formatter_%2.qm").arg(QString::fromLatin1(TRANSLATIONS_DIR), locale);
 
-    translator->load("/usr/share/dde-device-formatter/translations/dde-device-formatter_"
-                     +QLocale::system().name()+".qm");
-    a.installTranslator(translator);
+    if (translator.load(qmFile)) {
+        a.installTranslator(&translator);
+    }
 
     a.setOrganizationName("deepin");
     a.setApplicationName(QObject::tr("dde device formatter"));
     a.setApplicationVersion("1.0");
     a.setWindowIcon(QIcon::fromTheme("dde-file-manager", QIcon::fromTheme("system-file-manager")));
     a.setQuitOnLastWindowClosed(true);
-    a.setAttribute(Qt::AA_UseHighDpiPixmaps);
 
     //Command line
     CMDManager::instance()->process(a);
@@ -86,26 +94,29 @@ int main(int argc, char *argv[])
 
     //Check if the device is read-only
     UDisksBlock blk(path);
-    if (blk.isReadOnly()){
+    if (blk.isReadOnly()) {
         QString message = QObject::tr("The device is read-only");
         MessageDialog d(message, 0);
         d.exec();
         return 0;
     }
 
-    MainWindow* w = new MainWindow(path);
+    MainWindow *w = new MainWindow(path);
     w->show();
     QRect rect = w->geometry();
-    rect.moveCenter(qApp->desktop()->screenGeometry(w).center());
+    rect.moveCenter(QGuiApplication::primaryScreen()->availableGeometry().center());
     w->move(rect.x(), rect.y());
 
-    if(CMDManager::instance()->isSet("m")){
+    if (CMDManager::instance()->isSet("m")) {
         int parentWinId = CMDManager::instance()->getWinId();
         int winId = w->winId();
 
-        if(parentWinId != -1)
-            if (!isWayland)
-                qDebug() << XSetTransientForHint(QX11Info::display(), (Window)winId, (Window)parentWinId);
+        if (parentWinId != -1 && !isWayland) {
+            Display *display = QX11Info::display();
+            if (display) {
+                XSetTransientForHint(display, (Window)winId, (Window)parentWinId);
+            }
+        }
     }
 
     int code = a.exec();

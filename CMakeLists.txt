@@ -7,17 +7,16 @@ project(dde-device-formatter VERSION 1.0.0)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-# 设置安装路径
-set(CMAKE_INSTALL_PREFIX /usr)
+# 包含 GNUInstallDirs，用于获取标准安装路径
+include(GNUInstallDirs)
 
 # 查找必要的包
-find_package(Qt5 COMPONENTS Core Gui Widgets Concurrent Network X11Extras DBus REQUIRED)
+find_package(Qt6 COMPONENTS Core Gui Widgets Concurrent Network DBus LinguistTools REQUIRED)
+find_package(Dtk6 COMPONENTS Widget Gui REQUIRED)
+find_package(udisks2-qt6 REQUIRED)
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(PKGS REQUIRED
     x11
-    udisks2-qt5
-    dtkwidget
-    dtkgui
 )
 
 # 设置源文件
@@ -51,9 +50,21 @@ set(HEADERS
 )
 
 # 设置翻译文件
-set(TRANSLATIONS
-    translations/${PROJECT_NAME}.ts
-    translations/${PROJECT_NAME}_zh_CN.ts
+file(GLOB TS_FILES "${CMAKE_CURRENT_SOURCE_DIR}/translations/${PROJECT_NAME}*.ts")
+
+# 使用 Qt 提供的翻译工具
+qt_add_translations(${PROJECT_NAME}
+    # 指定翻译源文件
+    TS_FILES ${TS_FILES}
+    # 指定 QM 文件输出变量
+    QM_FILES_OUTPUT_VARIABLE QM_FILES
+    # 指定源文件，用于更新翻译
+    SOURCES ${SOURCES} ${HEADERS}
+    # 指定 LRELEASE 选项
+    LRELEASE_OPTIONS
+        -compress
+        -nounfinished
+        -removeidentical
 )
 
 # 在文件开头部分添加自动 moc 处理
@@ -72,35 +83,41 @@ target_include_directories(${PROJECT_NAME} PRIVATE
 
 # 链接库
 target_link_libraries(${PROJECT_NAME} PRIVATE
-    Qt5::Core
-    Qt5::Gui
-    Qt5::Widgets
-    Qt5::Concurrent
-    Qt5::Network
-    Qt5::X11Extras
-    Qt5::DBus
+    Qt6::Core
+    Qt6::Gui
+    Qt6::GuiPrivate
+    Qt6::Widgets
+    Qt6::Concurrent
+    Qt6::Network
+    Qt6::DBus
+    Dtk6::Widget
+    Dtk6::Gui
+    udisks2-qt6::udisks2-qt6
     ${PKGS_LIBRARIES}
 )
 
 # 添加编译选项
 target_compile_options(${PROJECT_NAME} PRIVATE ${PKGS_CFLAGS_OTHER})
 
-# 处理翻译文件
-if(CMAKE_BUILD_TYPE STREQUAL "Release")
-    find_package(Qt5 COMPONENTS LinguistTools REQUIRED)
-    
-    # 生成 .qm 文件
-    qt5_add_translation(QM_FILES ${TRANSLATIONS})
-    
-    # 添加自定义命令执行脚本
-    add_custom_target(translations ALL DEPENDS ${QM_FILES})
-    add_custom_command(TARGET translations POST_BUILD
-        COMMAND ${CMAKE_CURRENT_SOURCE_DIR}/translate_ts2desktop.sh
-        WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}
-    )
-endif()
+# 设置翻译文件路径
+set(TRANSLATIONS_INSTALL_DIR "${CMAKE_INSTALL_FULL_DATADIR}/${PROJECT_NAME}/translations")
+
+# 添加编译定义，传递安装路径到代码中
+target_compile_definitions(${PROJECT_NAME} PRIVATE 
+    "TRANSLATIONS_DIR=\"${TRANSLATIONS_INSTALL_DIR}\""
+)
 
 # 安装目标
-install(TARGETS ${PROJECT_NAME} DESTINATION ${CMAKE_INSTALL_PREFIX}/bin)
-install(FILES ${QM_FILES} DESTINATION ${CMAKE_INSTALL_PREFIX}/share/${PROJECT_NAME}/translations)
-install(FILES dde-device-formatter.desktop DESTINATION ${CMAKE_INSTALL_PREFIX}/share/applications) 
+install(TARGETS ${PROJECT_NAME} 
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
+
+# 安装翻译文件
+install(FILES ${QM_FILES} 
+    DESTINATION ${CMAKE_INSTALL_DATADIR}/${PROJECT_NAME}/translations
+)
+
+# 安装桌面文件
+install(FILES dde-device-formatter.desktop 
+    DESTINATION ${CMAKE_INSTALL_DATADIR}/applications
+) 
