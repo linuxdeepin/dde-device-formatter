@@ -9,13 +9,14 @@
 
 * pkg-config
 * libx11-dev
-* Qt5(>= 5.6) with modules:
-  - qtbase5-dev
-  - qt5-qmake
-* Deepin-toolkit(>=5.0) with modules:
-  - libdtkwidget-dev
-  - libdtkgui-dev
-* libudisks2-qt5-dev
+* Qt6 with modules:
+  - qt6-base-dev
+  - qt6-declarative-dev
+  - qt6-tools-dev
+* Deepin-toolkit(>=6.0) with modules:
+  - libdtk6widget-dev
+  - libdtk6gui-dev
+* libudisks2-qt6-dev
 
 ## 寻求帮助
 
