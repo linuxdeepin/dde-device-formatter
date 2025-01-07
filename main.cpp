@@ -28,11 +28,6 @@ DCORE_USE_NAMESPACE
 
 int main(int argc, char *argv[])
 {
-    // 在创建QApplication之前设置平台主题
-    if (qgetenv("QT_QPA_PLATFORM").isEmpty()) {
-        qputenv("QT_QPA_PLATFORM", "dxcb");
-    }
-    
     // 设置Deepin平台主题
     if (qgetenv("QT_QPA_PLATFORMTHEME").isEmpty()) {
         qputenv("QT_QPA_PLATFORMTHEME", "deepin");
