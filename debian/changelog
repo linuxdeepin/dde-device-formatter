@@ -1,3 +1,9 @@
+dde-device-formatter (1.5.1) unstable; urgency=medium
+
+  * remove dxcb
+
+ -- Zhang Sheng <zhangsheng@uniontech.com>  Tue, 07 Jan 2025 19:09:06 +0800
+
 dde-device-formatter (1.5.0) unstable; urgency=medium
 
   * adapt to Qt6
