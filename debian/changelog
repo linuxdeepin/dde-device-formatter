@@ -1,3 +1,9 @@
+dde-device-formatter (1.5.2) unstable; urgency=medium
+
+  * add qt6-base-private-dev
+
+ -- Zhang Sheng <zhangsheng@uniontech.com>  Wed, 08 Jan 2025 09:33:00 +0800
+
 dde-device-formatter (1.5.1) unstable; urgency=medium
 
   * remove dxcb
