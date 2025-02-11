@@ -113,17 +113,17 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="61"/>
+        <location filename="../main.cpp" line="68"/>
         <source>dde device formatter</source>
         <translation>格式化工具</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="78"/>
+        <location filename="../main.cpp" line="84"/>
         <source>Device does not exist</source>
         <translation>设备不存在</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="87"/>
+        <location filename="../main.cpp" line="93"/>
         <source>The device is read-only</source>
         <translation>此设备为只读</translation>
     </message>
