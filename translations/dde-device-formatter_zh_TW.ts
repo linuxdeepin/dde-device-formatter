@@ -1,8 +1,10 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="zh_TW" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="zh_TW">
 <context>
     <name>FinishPage</name>
     <message>
-        <location filename="../view/finishpage.cpp" line="42"/>
+        <location filename="../view/finishpage.cpp" line="22"/>
         <source>Format successful</source>
         <translation>格式化成功</translation>
     </message>
@@ -10,7 +12,7 @@
 <context>
     <name>FormatingPage</name>
     <message>
-        <location filename="../view/formatingpage.cpp" line="47"/>
+        <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
         <translation>正在格式化，請稍候……</translation>
     </message>
@@ -18,22 +20,22 @@
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../view/mainpage.cpp" line="104"/>
+        <location filename="../view/mainpage.cpp" line="99"/>
         <source>Type</source>
         <translation>類型</translation>
     </message>
     <message>
-        <location filename="../view/mainpage.cpp" line="122"/>
+        <location filename="../view/mainpage.cpp" line="117"/>
         <source>Label</source>
         <translation>標籤</translation>
     </message>
     <message>
-        <location filename="../view/mainpage.cpp" line="131"/>
+        <location filename="../view/mainpage.cpp" line="127"/>
         <source>Quick Format</source>
         <translation>快速格式化</translation>
     </message>
     <message>
-        <location filename="../view/mainpage.cpp" line="148"/>
+        <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
         <translation>格式化會清空磁碟上所有資料。</translation>
     </message>
@@ -41,43 +43,43 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../view/mainwindow.cpp" line="88"/>
-        <location filename="../view/mainwindow.cpp" line="106"/>
+        <location filename="../view/mainwindow.cpp" line="68"/>
+        <location filename="../view/mainwindow.cpp" line="86"/>
         <source>Format</source>
         <translation>格式化</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="161"/>
+        <location filename="../view/mainwindow.cpp" line="213"/>
         <source>Continue</source>
         <translation>繼續</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="166"/>
+        <location filename="../view/mainwindow.cpp" line="218"/>
         <source>Formatting...</source>
         <translation>正在格式化…</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="191"/>
+        <location filename="../view/mainwindow.cpp" line="244"/>
         <source>Done</source>
         <translation>完成</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="197"/>
+        <location filename="../view/mainwindow.cpp" line="254"/>
         <source>Quit</source>
         <translation>離開</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="198"/>
-        <source>Your disk is removed when formatting</source>
-        <translation>磁碟機在格式化時被移除</translation>
+        <location filename="../view/mainwindow.cpp" line="255"/>
+        <source>Your disk has been removed</source>
+        <translation>您的磁盤已被移除</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="201"/>
+        <location filename="../view/mainwindow.cpp" line="258"/>
         <source>Failed to format the device</source>
-        <translation type="unfinished"/>
+        <translation>格式化失敗</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="202"/>
+        <location filename="../view/mainwindow.cpp" line="259"/>
         <source>Reformat</source>
         <translation>重新格式化</translation>
     </message>
@@ -85,7 +87,7 @@
 <context>
     <name>MessageDialog</name>
     <message>
-        <location filename="../dialogs/messagedialog.cpp" line="43"/>
+        <location filename="../dialogs/messagedialog.cpp" line="23"/>
         <source>OK</source>
         <translation>確定</translation>
     </message>
@@ -93,42 +95,43 @@
 <context>
     <name>QCoreApplication</name>
     <message>
-        <location filename="../utils/udisksutils.cpp" line="55"/>
+        <location filename="../utils/udisksutils.cpp" line="38"/>
         <source>System Disk</source>
-        <translation type="unfinished"/>
+        <translation>系統盤</translation>
     </message>
     <message>
-        <location filename="../utils/udisksutils.cpp" line="59"/>
+        <location filename="../utils/udisksutils.cpp" line="42"/>
         <source>%1 Encrypted</source>
-        <translation type="unfinished"/>
+        <translation>%1 已加密</translation>
     </message>
     <message>
-        <location filename="../utils/udisksutils.cpp" line="61"/>
+        <location filename="../utils/udisksutils.cpp" line="44"/>
         <source>%1 Volume</source>
-        <translation type="unfinished"/>
+        <translation>%1 卷</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="112"/>
+        <location filename="../main.cpp" line="68"/>
+        <source>dde device formatter</source>
+        <translation>格式化工具</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="84"/>
         <source>Device does not exist</source>
         <translation>裝置不存在</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="121"/>
+        <location filename="../main.cpp" line="93"/>
         <source>The device is read-only</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Cannot format local device</source>
-        <translation type="vanished">無法格式化本機裝置</translation>
+        <translation>此設備爲只讀</translation>
     </message>
 </context>
 <context>
     <name>WarnPage</name>
     <message>
-        <location filename="../view/warnpage.cpp" line="43"/>
+        <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
         <translation>格式化會清空磁碟上所有資料，確定繼續？該操作無法復原。</translation>
     </message>
