@@ -1,3 +1,9 @@
+dde-device-formatter (1.5.3) unstable; urgency=medium
+
+  * fix bug 
+
+ -- Zhang Sheng <zhangsheng@uniontech.com>  Thu, 27 Feb 2025 19:02:08 +0800
+
 dde-device-formatter (1.5.2) unstable; urgency=medium
 
   * add qt6-base-private-dev
