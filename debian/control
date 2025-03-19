@@ -20,6 +20,7 @@ Homepage: http://www.deepin.org
 Package: dde-device-formatter
 Architecture: any
 Depends: ${shlibs:Depends},
-  ${misc:Depends}
+  ${misc:Depends},
+  nilfs-tools
 Description: Device formatter
   A simple graphical interface for creating file system in a block device.
