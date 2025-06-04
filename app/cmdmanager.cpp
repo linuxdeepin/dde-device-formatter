@@ -4,6 +4,7 @@
 
 #include "cmdmanager.h"
 #include <QStringList>
+#include <QDebug>
 
 CMDManager *CMDManager::instance()
 {
@@ -38,9 +39,12 @@ QString CMDManager::getPath()
 {
     QStringList positionalArguments = m_parser.positionalArguments();
     if (positionalArguments.count() > 0) {
-        return m_parser.positionalArguments().at(0);
+        QString path = m_parser.positionalArguments().at(0);
+        qDebug() << "CMDManager: Found device path:" << path;
+        return path;
     }
 
+    qDebug() << "CMDManager: No device path provided in arguments";
     return QString();
 }
 
@@ -51,14 +55,19 @@ QStringList CMDManager::positionalArguments() const
 
 void CMDManager::showHelp(int exitCode)
 {
+    qDebug() << "CMDManager: Showing help with exit code:" << exitCode;
     return m_parser.showHelp(exitCode);
 }
 
 int CMDManager::getWinId()
 {
     QString winId = m_parser.value(m_modelModeOpt);
-    if(winId.isEmpty())
+    qDebug() << "CMDManager: Raw window ID value:" << (winId.isEmpty() ? "empty" : winId);
+    
+    if(winId.isEmpty()) {
+        qDebug() << "CMDManager: No window ID provided, returning -1";
         return -1;
+    }
     return winId.toInt();
 }
 

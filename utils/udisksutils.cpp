@@ -7,6 +7,7 @@
 #include <QCoreApplication>
 #include <QLocale>
 #include <QStorageInfo>
+#include <QDebug>
 
 #include <dblockdevice.h>
 #include <ddiskdevice.h>
@@ -35,25 +36,34 @@ bool UDisksBlock::isReadOnly() const
 QString UDisksBlock::displayName() const
 {
     if (blk->mountPoints().contains(QByteArray("/\0", 2))) {
+        qDebug() << "UDisksBlock: Device is system disk";
         return QCoreApplication::tr("System Disk");
     }
-    if (blk->idLabel().length() == 0) {
+    
+    QString label = blk->idLabel();
+    if (label.length() == 0) {
         if (blk->isEncrypted() && blk->cleartextDevice().length() <= 1) {
-            return QCoreApplication::tr("%1 Encrypted").arg(QLocale::system().formattedDataSize(sizeTotal()));
+            QString name = QCoreApplication::tr("%1 Encrypted").arg(QLocale::system().formattedDataSize(sizeTotal()));
+            qDebug() << "UDisksBlock: Device is encrypted, display name:" << name;
+            return name;
         }
-        return QCoreApplication::tr("%1 Volume").arg(QLocale::system().formattedDataSize(sizeTotal()));
+        QString name = QCoreApplication::tr("%1 Volume").arg(QLocale::system().formattedDataSize(sizeTotal()));
+        qDebug() << "UDisksBlock: Device has no label, using volume name:" << name;
+        return name;
     } else {
-        return blk->idLabel();
+        qDebug() << "UDisksBlock: Device label:" << label;
+        return label;
     }
 }
 
 QString UDisksBlock::iconName() const
 {
     QScopedPointer<DDiskDevice> drv(DDiskManager::createDiskDevice(blk->drive()));
-    if (drv->media() == "thumb" || drv->removable() || drv->mediaRemovable() || drv->ejectable()) {
-        return QString("drive-removable-media") + (blk->isEncrypted() ? "-encrypted" : "");
-    }
-    return QString("drive-harddisk") + (blk->isEncrypted() ? "-encrypted" : "");
+    bool isRemovable = (drv->media() == "thumb" || drv->removable() || drv->mediaRemovable() || drv->ejectable());
+    QString iconName = QString(isRemovable ? "drive-removable-media" : "drive-harddisk") + (blk->isEncrypted() ? "-encrypted" : "");
+    
+    qDebug() << "UDisksBlock: Device type - removable:" << isRemovable << ", encrypted:" << blk->isEncrypted() << ", icon:" << iconName;
+    return iconName;
 }
 
 QString UDisksBlock::fsType() const
@@ -73,15 +83,18 @@ qint64 UDisksBlock::sizeUsed() const
         rblk.reset(DDiskManager::createBlockDevice(blk->cleartextDevice()));
     }
     if (!rblk->hasFileSystem()) {
+        qDebug() << "UDisksBlock: Device has no filesystem, cannot calculate used size";
         return -1;
     }
 
     QString mp;
     if (!rblk->mountPoints().empty()) {
         mp = rblk->mountPoints().front();
+        qDebug() << "UDisksBlock: Device mount point:" << mp;
     }
 
     if (mp.isEmpty()) {
+        qDebug() << "UDisksBlock: Device is not mounted, cannot calculate used size";
         return -1;
     }
 

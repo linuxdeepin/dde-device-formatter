@@ -28,6 +28,8 @@ DCORE_USE_NAMESPACE
 
 int main(int argc, char *argv[])
 {
+    qDebug() << "Main: Starting dde-device-formatter application";
+    
     // 设置Deepin平台主题
     if (qgetenv("QT_QPA_PLATFORMTHEME").isEmpty()) {
         qputenv("QT_QPA_PLATFORMTHEME", "deepin");
@@ -46,22 +48,32 @@ int main(int argc, char *argv[])
     bool isWayland = false;
     if (XDG_SESSION_TYPE == QLatin1String("wayland") || WAYLAND_DISPLAY.contains(QLatin1String("wayland"), Qt::CaseInsensitive)) {
         isWayland = true;
+        qDebug() << "Main: Detected Wayland session";
+    } else {
+        qDebug() << "Main: Detected X11 session";
     }
 
     DApplication a(argc, argv);
 
     //Singleton app handle
     bool isSingletonApp = SingletonApp::instance()->setSingletonApplication("dde-device-formatter");
-    if (!isSingletonApp)
+    if (!isSingletonApp) {
+        qDebug() << "Main: Another instance is already running, exiting";
         return 0;
+    }
 
     //Load translation
     QTranslator translator;
     QString locale = QLocale::system().name();
     QString qmFile = QString("%1/dde-device-formatter_%2.qm").arg(QString::fromLatin1(TRANSLATIONS_DIR), locale);
+    qDebug() << "Main: System locale:" << locale;
+    qDebug() << "Main: Translation file path:" << qmFile;
 
     if (translator.load(qmFile)) {
         a.installTranslator(&translator);
+        qDebug() << "Main: Translation file loaded and installed successfully";
+    } else {
+        qDebug() << "Main: Failed to load translation file, using default language";
     }
 
     a.setOrganizationName("deepin");
@@ -75,6 +87,7 @@ int main(int argc, char *argv[])
 
     // Check if we need display help text.
     if (CMDManager::instance()->positionalArguments().isEmpty()) {
+        qDebug() << "Main: No positional arguments provided, showing help";
         CMDManager::instance()->showHelp();
     }
 
@@ -90,6 +103,7 @@ int main(int argc, char *argv[])
     //Check if the device is read-only
     UDisksBlock blk(path);
     if (blk.isReadOnly()) {
+        qDebug() << "Main: Device is read-only, cannot format";
         QString message = QObject::tr("The device is read-only");
         MessageDialog d(message, 0);
         d.exec();
@@ -103,10 +117,12 @@ int main(int argc, char *argv[])
     w->move(rect.x(), rect.y());
 
     if (CMDManager::instance()->isSet("m")) {
+        qDebug() << "Main: Model mode enabled, setting window parent";
         int parentWinId = CMDManager::instance()->getWinId();
         int winId = w->winId();
 
         if (parentWinId != -1 && !isWayland) {
+            qDebug() << "Main: Setting transient window hint for X11";
             Display *display = QX11Info::display();
             if (display) {
                 XSetTransientForHint(display, (Window)winId, (Window)parentWinId);
@@ -115,5 +131,7 @@ int main(int argc, char *argv[])
     }
 
     int code = a.exec();
+    
+    qDebug() << "Main: Performing quick exit";
     quick_exit(code);
 }
