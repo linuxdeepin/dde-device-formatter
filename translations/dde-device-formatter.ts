@@ -49,37 +49,37 @@
         <translation>Format</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="213"/>
+        <location filename="../view/mainwindow.cpp" line="250"/>
         <source>Continue</source>
         <translation>Continue</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="218"/>
+        <location filename="../view/mainwindow.cpp" line="256"/>
         <source>Formatting...</source>
         <translation>Formatting...</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="244"/>
+        <location filename="../view/mainwindow.cpp" line="290"/>
         <source>Done</source>
         <translation>Done</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="254"/>
+        <location filename="../view/mainwindow.cpp" line="303"/>
         <source>Quit</source>
         <translation>Quit</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="255"/>
+        <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
         <translation>Your disk has been removed</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="258"/>
+        <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
         <translation>Failed to format the device</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="259"/>
+        <location filename="../view/mainwindow.cpp" line="309"/>
         <source>Reformat</source>
         <translation>Reformat</translation>
     </message>
@@ -95,17 +95,17 @@
 <context>
     <name>QCoreApplication</name>
     <message>
-        <location filename="../utils/udisksutils.cpp" line="38"/>
+        <location filename="../utils/udisksutils.cpp" line="40"/>
         <source>System Disk</source>
         <translation>System Disk</translation>
     </message>
     <message>
-        <location filename="../utils/udisksutils.cpp" line="42"/>
+        <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
         <translation>%1 Encrypted</translation>
     </message>
     <message>
-        <location filename="../utils/udisksutils.cpp" line="44"/>
+        <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
         <translation>%1 Volume</translation>
     </message>
@@ -113,17 +113,17 @@
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="68"/>
+        <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
         <translation>dde device formatter</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="84"/>
+        <location filename="../main.cpp" line="97"/>
         <source>Device does not exist</source>
         <translation>Device does not exist</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="93"/>
+        <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
         <translation>The device is read-only</translation>
     </message>

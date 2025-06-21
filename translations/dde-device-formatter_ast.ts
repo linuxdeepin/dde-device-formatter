@@ -1,10 +1,10 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="ast" version="2.1">
+<?xml version="1.0" ?><!DOCTYPE TS><TS version="2.1" language="ast">
 <context>
     <name>FinishPage</name>
     <message>
         <location filename="../view/finishpage.cpp" line="42"/>
         <source>Format successful</source>
-        <translation type="unfinished"/>
+        <translation>Formato exitosu</translation>
     </message>
 </context>
 <context>
@@ -12,7 +12,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="47"/>
         <source>Formatting the disk, please wait...</source>
-        <translation type="unfinished"/>
+        <translation>Formatando el discu, por favor, espere...</translation>
     </message>
 </context>
 <context>
@@ -30,19 +30,18 @@
     <message>
         <location filename="../view/mainpage.cpp" line="131"/>
         <source>Quick Format</source>
-        <translation type="unfinished"/>
+        <translation>Formato rápido</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="148"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation type="unfinished"/>
+        <translation>El formato eliminará todos los datos nel discu.</translation>
     </message>
 </context>
 <context>
     <name>MainWindow</name>
     <message>
         <location filename="../view/mainwindow.cpp" line="88"/>
-        <location filename="../view/mainwindow.cpp" line="106"/>
         <source>Format</source>
         <translation>Formatiar</translation>
     </message>
@@ -69,12 +68,12 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="198"/>
         <source>Your disk is removed when formatting</source>
-        <translation>Baleraráse&apos;l to discu al formatiar</translation>
+        <translation>Baleraráse'l to discu al formatiar</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="201"/>
         <source>Failed to format the device</source>
-        <translation type="unfinished"/>
+        <translation>Falló el formato del dispositivu</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="202"/>
@@ -95,17 +94,17 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="55"/>
         <source>System Disk</source>
-        <translation type="unfinished"/>
+        <translation>Discu del sistema</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="59"/>
         <source>%1 Encrypted</source>
-        <translation type="unfinished"/>
+        <translation>'%1 Encriptáu'</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="61"/>
         <source>%1 Volume</source>
-        <translation type="unfinished"/>
+        <translation>'%1 Volumen'</translation>
     </message>
 </context>
 <context>
@@ -113,16 +112,16 @@
     <message>
         <location filename="../main.cpp" line="112"/>
         <source>Device does not exist</source>
-        <translation>Nun esiste&apos;l preséu</translation>
+        <translation>Nun esiste'l preséu</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="121"/>
         <source>The device is read-only</source>
-        <translation type="unfinished"/>
+        <translation>El dispositivu ta de solu lectura</translation>
     </message>
     <message>
         <source>Cannot format local device</source>
-        <translation type="vanished">Nun pue formatiase&apos;l preséu llocal</translation>
+        <translation type="vanished">Nun pue formatiase'l preséu llocal</translation>
     </message>
 </context>
 <context>
@@ -130,7 +129,7 @@
     <message>
         <location filename="../view/warnpage.cpp" line="43"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation type="unfinished"/>
+        <translation>El formato eliminará todos los datos nes esti discu, ¿estas seguru de qu'quieres continuar? No pue ser restablecíu.</translation>
     </message>
 </context>
 </TS>
