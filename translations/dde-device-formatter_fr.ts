@@ -1,95 +1,92 @@
-<?xml version="1.0" ?><!DOCTYPE TS><TS language="fr" version="2.1">
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE TS>
+<TS version="2.1" language="fr">
 <context>
     <name>FinishPage</name>
     <message>
-        <location filename="../view/finishpage.cpp" line="42"/>
+        <location filename="../view/finishpage.cpp" line="22"/>
         <source>Format successful</source>
-        <translation type="unfinished"/>
+        <translation>التنسيق ناجح</translation>
     </message>
 </context>
 <context>
     <name>FormatingPage</name>
     <message>
-        <location filename="../view/formatingpage.cpp" line="47"/>
+        <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation type="unfinished"/>
+        <translation>يتم التنسيق القرص، من فضلك انتظر...</translation>
     </message>
 </context>
 <context>
     <name>MainPage</name>
     <message>
-        <location filename="../view/mainpage.cpp" line="119"/>
+        <location filename="../view/mainpage.cpp" line="99"/>
         <source>Type</source>
         <translation>Type</translation>
     </message>
     <message>
-        <location filename="../view/mainpage.cpp" line="137"/>
+        <location filename="../view/mainpage.cpp" line="117"/>
         <source>Label</source>
         <translation>Libellé</translation>
     </message>
     <message>
-        <location filename="../view/mainpage.cpp" line="146"/>
+        <location filename="../view/mainpage.cpp" line="127"/>
         <source>Quick Format</source>
-        <translation type="unfinished"/>
+        <translation>تنسيق سريع</translation>
     </message>
     <message>
-        <location filename="../view/mainpage.cpp" line="163"/>
+        <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation type="unfinished"/>
+        <translation>سيؤدي التنسيق إلى حذف جميع البيانات على القرص.</translation>
     </message>
 </context>
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../view/mainwindow.cpp" line="88"/>
-        <location filename="../view/mainwindow.cpp" line="106"/>
+        <location filename="../view/mainwindow.cpp" line="68"/>
         <source>Format</source>
         <translation>Format</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="162"/>
+        <location filename="../view/mainwindow.cpp" line="250"/>
         <source>Continue</source>
         <translation>Continuer</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="167"/>
+        <location filename="../view/mainwindow.cpp" line="256"/>
         <source>Formatting...</source>
-        <translation type="unfinished"/>
+        <translation>يتم التنسيق...</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="193"/>
+        <location filename="../view/mainwindow.cpp" line="290"/>
         <source>Done</source>
         <translation>Terminé</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="199"/>
+        <location filename="../view/mainwindow.cpp" line="303"/>
         <source>Quit</source>
         <translation>Quitter</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="200"/>
+        <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation type="unfinished"/>
+        <translation>تم إزالة قرصك</translation>
     </message>
     <message>
-        <source>Your disk is removed when formatting</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <location filename="../view/mainwindow.cpp" line="203"/>
+        <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation type="unfinished"/>
+        <translation>فشل التنسيق الجهاز</translation>
     </message>
     <message>
-        <location filename="../view/mainwindow.cpp" line="204"/>
+        <location filename="../view/mainwindow.cpp" line="309"/>
         <source>Reformat</source>
-        <translation type="unfinished"/>
+        <translation>إعادة التنسيق</translation>
     </message>
 </context>
 <context>
     <name>MessageDialog</name>
     <message>
-        <location filename="../dialogs/messagedialog.cpp" line="43"/>
+        <location filename="../dialogs/messagedialog.cpp" line="23"/>
         <source>OK</source>
         <translation>OK</translation>
     </message>
@@ -97,44 +94,45 @@
 <context>
     <name>QCoreApplication</name>
     <message>
-        <location filename="../utils/udisksutils.cpp" line="55"/>
+        <location filename="../utils/udisksutils.cpp" line="40"/>
         <source>System Disk</source>
-        <translation type="unfinished"/>
+        <translation>القرص النظامي</translation>
     </message>
     <message>
-        <location filename="../utils/udisksutils.cpp" line="59"/>
+        <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation type="unfinished"/>
+        <translation>'%1 مشفر'</translation>
     </message>
     <message>
-        <location filename="../utils/udisksutils.cpp" line="61"/>
+        <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation type="unfinished"/>
+        <translation>'%1 الحجم'</translation>
     </message>
 </context>
 <context>
     <name>QObject</name>
     <message>
-        <location filename="../main.cpp" line="90"/>
+        <location filename="../main.cpp" line="80"/>
+        <source>dde device formatter</source>
+        <translation>dde device formatter</translation>
+    </message>
+    <message>
+        <location filename="../main.cpp" line="97"/>
         <source>Device does not exist</source>
-        <translation>L&apos;appareil n&apos;existe pas</translation>
+        <translation>L'appareil n'existe pas</translation>
     </message>
     <message>
-        <location filename="../main.cpp" line="99"/>
+        <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation type="unfinished"/>
-    </message>
-    <message>
-        <source>Cannot format local device</source>
-        <translation type="unfinished"/>
+        <translation>الجهاز فقط القراءة</translation>
     </message>
 </context>
 <context>
     <name>WarnPage</name>
     <message>
-        <location filename="../view/warnpage.cpp" line="43"/>
+        <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation type="unfinished"/>
+        <translation>سيؤدي التنسيق إلى حذف جميع البيانات على هذا القرص، هل أنت متأكد من الرغبة في الاستمرار؟ لا يمكن استعادة البيانات.</translation>
     </message>
 </context>
 </TS>
