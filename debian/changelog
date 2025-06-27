@@ -1,3 +1,9 @@
+dde-device-formatter (1.5.6) unstable; urgency=medium
+
+  * remove obsolete English translation file 
+
+ -- Zhang Sheng <zhangsheng@uniontech.com>  Fri, 27 Jun 2025 17:11:30 +0800
+
 dde-device-formatter (1.5.5) unstable; urgency=medium
 
   * update translations
