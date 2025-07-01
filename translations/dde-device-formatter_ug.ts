@@ -6,7 +6,7 @@
     <message>
         <location filename="../view/finishpage.cpp" line="22"/>
         <source>Format successful</source>
-        <translation>سىفرمىت مۇۋەفەقىيەتلىك</translation>
+        <translation>تىزىلىش مۇۋەفەقىيەتلىك بىتىدى</translation>
     </message>
 </context>
 <context>
@@ -14,7 +14,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>دېسکنى سىفرمىت قىلىۋاتىدۇ، كۈتۈرۈڭ...</translation>
+        <translation>دиск تىزىلىۋاتىدۇ، كۈتۈرۈڭ...</translation>
     </message>
 </context>
 <context>
@@ -27,17 +27,17 @@
     <message>
         <location filename="../view/mainpage.cpp" line="117"/>
         <source>Label</source>
-        <translation>ئىسىم</translation>
+        <translation>ئىسم</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
         <source>Quick Format</source>
-        <translation>تېز سىفرمىت</translation>
+        <translation>تېز تىزىلىش</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>سىفرمىت بىر دېسکنى ئىشلەپ چىقىش ئىچىن بار دەتىنى سىلەيدۇ.</translation>
+        <translation>تىزىلىش بارلىق مەلۇماتنى دىسكىدىن ھەققىدە ئۆچۈرۈدۇ.</translation>
     </message>
 </context>
 <context>
@@ -50,37 +50,37 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="250"/>
         <source>Continue</source>
-        <translation>دېۋام قىلىش</translation>
+        <translation>دېವام قىلىش</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="256"/>
         <source>Formatting...</source>
-        <translation>سىفرمىت قىلىۋاتىدۇ...</translation>
+        <translation>تىزىلىۋاتىدۇ...</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="290"/>
         <source>Done</source>
-        <translation>تەككىرلەندى</translation>
+        <translation>تەمەن</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="303"/>
         <source>Quit</source>
-        <translation>چыقىش</translation>
+        <translation>چېقىش</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>سىزنىڭ دېسكىڭىز ئۆچۈرۈلدى</translation>
+        <translation>سىزنىڭ دىسكىڭىز چېقىرىلغان</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>تەسىرلىشىش ئۇچۇرلىقى</translation>
+        <translation>ھەجمەت ئۈچۈن تىزىلىش مۇمكىن بولمىدى</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
         <source>Reformat</source>
-        <translation>تەسىرلىشىش</translation>
+        <translation>تىزىلىشنى ئەمەل قىلىش</translation>
     </message>
 </context>
 <context>
@@ -96,17 +96,17 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="40"/>
         <source>System Disk</source>
-        <translation>سىستېم دېسكىسى</translation>
+        <translation>سىستېم دىسكى</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 سېنىمىشقا قىلىنغان'</translation>
+        <translation>&apos;%1 تەسەرلىنىدى&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 جايى'</translation>
+        <translation>&apos;%1 جايى&apos;</translation>
     </message>
 </context>
 <context>
@@ -114,17 +114,17 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde تەسىرلىشىش چىقىرىشى</translation>
+        <translation>dde ئۈچۈن تىزىلىشچى</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
         <source>Device does not exist</source>
-        <translation>تەسىرلىشىش چىقىرىشى ئۇچۇرلىقى</translation>
+        <translation>ھەجمەت مەۋجۇت بولمىدى</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>تەسىرلىشىش چىقىرىشى ئېنىق ئەسەرلىك</translation>
+        <translation>ھەجمەت ئۆچۈرۈلەلمەيدى</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,7 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>سىفرمىت بىر دېسکنى ئىشلەپ چىقىش ئىچىن بار دەتىنى سىلەيدۇ، دېۋام قىلىشنى ئۇچۇرلىقى؟ ئۇ تەككىرلەنمەيدۇ.</translation>
+        <translation>تىزىلىش بارلىق مەلۇماتنى ئۇچۇرلەيدۇ، ئەمەل قىلىشنى ھەققىدە ئەمەل قىلىسىزمۇ؟ ئۇنى ئەمەل قىلىش مۇمكىن بولمىدى.</translation>
     </message>
 </context>
 </TS>

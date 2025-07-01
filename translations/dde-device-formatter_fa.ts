@@ -6,7 +6,7 @@
     <message>
         <location filename="../view/finishpage.cpp" line="22"/>
         <source>Format successful</source>
-        <translation>فرمت‌سازی موفقیت‌آمیز بود</translation>
+        <translation>فرمت‌بندی با موفقیت انجام شد</translation>
     </message>
 </context>
 <context>
@@ -14,7 +14,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>فرمت‌سازی دیسک، لطفا منتظر بمانید...</translation>
+        <translation>فرمت‌بندی دیسک، لطفا منتظر بمانید...</translation>
     </message>
 </context>
 <context>
@@ -37,7 +37,7 @@
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>فرمت‌سازی تمام داده‌های دیسک را حذف خواهد کرد.</translation>
+        <translation>فرمت‌بندی تمام داده‌های دیسک را حذف می‌کند.</translation>
     </message>
 </context>
 <context>
@@ -45,7 +45,7 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="68"/>
         <source>Format</source>
-        <translation>فرمت</translation>
+        <translation>فرمت‌بندی</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="250"/>
@@ -55,12 +55,12 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="256"/>
         <source>Formatting...</source>
-        <translation>فرمت‌سازی...</translation>
+        <translation>فرمت‌بندی...</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="290"/>
         <source>Done</source>
-        <translation>完了</translation>
+        <translation>انجام شد</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="303"/>
@@ -75,12 +75,12 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>فرمت‌سازی دستگاه ناموفق بود</translation>
+        <translation>فرمت‌بندی دستگاه با شکست مواجه شد</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
         <source>Reformat</source>
-        <translation>بازفرمت</translation>
+        <translation>فرمت مجدد</translation>
     </message>
 </context>
 <context>
@@ -101,12 +101,12 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 رمزگذاری شده'</translation>
+        <translation>&apos;%1 رمز‌گذاری شده&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 جلد'</translation>
+        <translation>&apos;%1 حجم&apos;</translation>
     </message>
 </context>
 <context>
@@ -114,7 +114,7 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde فرمت‌ساز دستگاه</translation>
+        <translation>dde فرمت‌دهنده دستگاه</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
@@ -132,7 +132,7 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>فرمت‌سازی تمام داده‌های این دیسک را حذف خواهد کرد، مطمئن هستید که می‌خواهید ادامه دهید؟ این داده‌ها قابل بازیابی نیست.</translation>
+        <translation>فرمت‌بندی تمام داده‌های این دیسک را حذف خواهد کرد، مطمئن هستید که می‌خواهید ادامه دهید؟ این داده‌ها قابل بازیابی نیست.</translation>
     </message>
 </context>
 </TS>

@@ -73,6 +73,10 @@
         <translation>Jūsų diskas buvo pašalintas</translation>
     </message>
     <message>
+        <source>Your disk is removed when formatting</source>
+        <translation type="vanished">Formatuojant, jūsų diskas yra pašalinamas</translation>
+    </message>
+    <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
         <translation>Nepavyko formatuoti įrenginio</translation>
@@ -114,7 +118,7 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde įrenginio formateris</translation>
+        <translation>dde įrengimo įrenginys</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
@@ -125,6 +129,10 @@
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
         <translation>Šis įrenginys yra skirtas tik skaitymui</translation>
+    </message>
+    <message>
+        <source>Cannot format local device</source>
+        <translation type="vanished">Negalima formatuoti vietinį įrenginį</translation>
     </message>
 </context>
 <context>

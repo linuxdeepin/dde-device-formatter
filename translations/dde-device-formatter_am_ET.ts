@@ -6,7 +6,7 @@
     <message>
         <location filename="../view/finishpage.cpp" line="22"/>
         <source>Format successful</source>
-        <translation>መረጃ ያስፈልጋለች</translation>
+        <translation>መርxEF ባለፈ</translation>
     </message>
 </context>
 <context>
@@ -14,7 +14,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>የዲስክ ማረጋገጫ ይካትታል፣ ደንበ ይጠብቅ</translation>
+        <translation>መርxEF ይካትታል፣ ደህንነት ይጠብ የምትፈልግ</translation>
     </message>
 </context>
 <context>
@@ -27,17 +27,17 @@
     <message>
         <location filename="../view/mainpage.cpp" line="117"/>
         <source>Label</source>
-        <translation>መደብ</translation>
+        <translation>መነጋሪ</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
         <source>Quick Format</source>
-        <translation>ፍላሽ ማረጋገጫ</translation>
+        <translation>ፍላሽ መርxEF</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>ማረጋገጫ የዲስክ ስለመረጃ ይሰርቅ</translation>
+        <translation>መርxEF የሚከተለው የዲስክ ምሁራን ይሰር የምትፈልግ</translation>
     </message>
 </context>
 <context>
@@ -45,7 +45,7 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="68"/>
         <source>Format</source>
-        <translation>ማረጋገጫ</translation>
+        <translation>መርxEF</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="250"/>
@@ -55,12 +55,12 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="256"/>
         <source>Formatting...</source>
-        <translation>ማረጋገጫ...</translation>
+        <translation>መርxEF ይካትታል...</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="290"/>
         <source>Done</source>
-        <translation>አማራሽ</translation>
+        <translation>ውድ</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="303"/>
@@ -70,17 +70,17 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>ዲስክዎ ይተወለዱል</translation>
+        <translation>ዲስክዎ ይገይጠዋል</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>ዲች ማረጋገጫ የተሳሳተ ይመጣል</translation>
+        <translation>ሚስተና ባለፈ የሚስተና ይገይጠዋል</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
         <source>Reformat</source>
-        <translation>መረጃ ማረጋገጫ</translation>
+        <translation>መነጋሪ መርxEF</translation>
     </message>
 </context>
 <context>
@@ -96,12 +96,12 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="40"/>
         <source>System Disk</source>
-        <translation>የሰራተኛ መረጃ</translation>
+        <translation>የሲስተም የዲስክ</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 የተስተካከሉ ይመጣል'</translation>
+        <translation>&apos;%1 እንክሪፕተ&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
@@ -114,17 +114,17 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde የዲች ማረጋገጫ አገልግሎት</translation>
+        <translation>dde የሚስተና መርxEF መክፈል</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
         <source>Device does not exist</source>
-        <translation>ዲች የሚገኛል</translation>
+        <translation>ሚስተና የሚገኘው የሌለው</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>ዲች የማንበጃ ይመጣል</translation>
+        <translation>ሚስተና የማ독 የተገኘው</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,7 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>ማረጋገጫ የዲስክ ስለመረጃ ይሰርቅ፣ እርምጃ ይፈልጋሉ የማረጋገጫ ይቀጥሉ? ይተወለዱል የሚገኝም ይመጣል።</translation>
+        <translation>መርxEF የሚከተለው የዲስክ ምሁራን ይሰር የምትፈልግ፣ ይህ የሚገኘው የሚመለከት የምትፈልግ? ይህ የሚገኘው የማለት የሌለው</translation>
     </message>
 </context>
 </TS>

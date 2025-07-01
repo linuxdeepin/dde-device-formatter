@@ -70,12 +70,16 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>Vaš disk bol odpojený</translation>
+        <translation>Vaš disk bol odstránený</translation>
+    </message>
+    <message>
+        <source>Your disk is removed when formatting</source>
+        <translation type="vanished">Váš disk je odobratý pri formátovaní</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>Formátovanie zariadenia zlyhalo</translation>
+        <translation>Formátovanie zariadenia prešlo nepriamo</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
@@ -101,12 +105,12 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 zašifrovaný'</translation>
+        <translation>&apos;%1 zašifrovaný&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 objem'</translation>
+        <translation>&apos;%1 objem&apos;</translation>
     </message>
 </context>
 <context>
@@ -114,7 +118,7 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde formátor zariadenia</translation>
+        <translation>dde formátovací nástroj</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
@@ -125,6 +129,10 @@
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
         <translation>Zariadenie je len na čítanie</translation>
+    </message>
+    <message>
+        <source>Cannot format local device</source>
+        <translation type="vanished">Neformátovať lokálne zariadenie</translation>
     </message>
 </context>
 <context>

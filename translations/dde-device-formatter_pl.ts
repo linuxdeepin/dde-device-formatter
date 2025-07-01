@@ -44,6 +44,7 @@
     <name>MainWindow</name>
     <message>
         <location filename="../view/mainwindow.cpp" line="68"/>
+        <location filename="../view/mainwindow.cpp" line="86"/>
         <source>Format</source>
         <translation>Format</translation>
     </message>
@@ -70,7 +71,11 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>Twój dysk został odłączony</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Your disk is removed when formatting</source>
+        <translation type="vanished">Podczas sformatowania dysk został usunięty</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
@@ -96,17 +101,17 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="40"/>
         <source>System Disk</source>
-        <translation>Oświetlony dysk</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>%1 szyfrowany</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>%1 pojemność</translation>
+        <translation type="unfinished"></translation>
     </message>
 </context>
 <context>
@@ -114,7 +119,7 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde device formatter</translation>
+        <translation type="unfinished"></translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
@@ -124,7 +129,11 @@
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>Urządzenie jest tylko do odczytu</translation>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot format local device</source>
+        <translation type="vanished">Nie można sformatować urządzenia lokalnego</translation>
     </message>
 </context>
 <context>

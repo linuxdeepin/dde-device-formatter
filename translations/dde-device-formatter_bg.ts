@@ -70,7 +70,11 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>Насъщно е изваден диска</translation>
+        <translation>Вашият диск е премахнат</translation>
+    </message>
+    <message>
+        <source>Your disk is removed when formatting</source>
+        <translation type="vanished">Вашият диск е премахнат, когато се форматира</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
@@ -114,7 +118,7 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde устройство за форматиране</translation>
+        <translation>dde устройство форматиращо</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
@@ -125,6 +129,10 @@
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
         <translation>Устройството е само за четене</translation>
+    </message>
+    <message>
+        <source>Cannot format local device</source>
+        <translation type="vanished">Локалното устройство не може да бъде форматирано</translation>
     </message>
 </context>
 <context>

@@ -6,7 +6,7 @@
     <message>
         <location filename="../view/finishpage.cpp" line="22"/>
         <source>Format successful</source>
-        <translation>Форматталды</translation>
+        <translation>Форматлаштырылды</translation>
     </message>
 </context>
 <context>
@@ -14,7 +14,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>Диск форматталып, күтүү...</translation>
+        <translation>Диск форматлаштырылый, күтөңгө...</translation>
     </message>
 </context>
 <context>
@@ -22,7 +22,7 @@
     <message>
         <location filename="../view/mainpage.cpp" line="99"/>
         <source>Type</source>
-        <translation>Түр</translation>
+        <translation>Түрү</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="117"/>
@@ -32,12 +32,12 @@
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
         <source>Quick Format</source>
-        <translation>Тез формат</translation>
+        <translation>Тез форматлаштыруу</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>Форматталу дисктагы барлык маълуматты өчүрөт.</translation>
+        <translation>Форматлаштыруу дисктагы барлык маалыматты өчүрөт.</translation>
     </message>
 </context>
 <context>
@@ -45,27 +45,27 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="68"/>
         <source>Format</source>
-        <translation>Формат</translation>
+        <translation>Форматлаштыруу</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="250"/>
         <source>Continue</source>
-        <translation>Далында</translation>
+        <translation>Далындоо</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="256"/>
         <source>Formatting...</source>
-        <translation>Форматталу...</translation>
+        <translation>Форматлаштырылый...</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="290"/>
         <source>Done</source>
-        <translation>Түзүү</translation>
+        <translation>Түзүлүп турат</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="303"/>
         <source>Quit</source>
-        <translation>Чығу</translation>
+        <translation>Чыгып өт</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
@@ -75,12 +75,12 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>Аспа форматталган</translation>
+        <translation>Жүрөтүү үчүн ылдамдык өчүрүлбей</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
         <source>Reformat</source>
-        <translation>Форматтануу</translation>
+        <translation>Кайта форматлаштыруу</translation>
     </message>
 </context>
 <context>
@@ -88,7 +88,7 @@
     <message>
         <location filename="../dialogs/messagedialog.cpp" line="23"/>
         <source>OK</source>
-        <translation>Баар</translation>
+        <translation>Жакшы</translation>
     </message>
 </context>
 <context>
@@ -96,17 +96,17 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="40"/>
         <source>System Disk</source>
-        <translation>Системдик диск</translation>
+        <translation>Системалык диск</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 шифрланган'</translation>
+        <translation>&apos;%1 шифрланган&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 тому'</translation>
+        <translation>&apos;%1 тому&apos;</translation>
     </message>
 </context>
 <context>
@@ -114,17 +114,17 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde ылдый форматтауы</translation>
+        <translation>dde ылдамдык форматтауу</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
         <source>Device does not exist</source>
-        <translation>Аспа ылдый</translation>
+        <translation>Аспа ылдамдык бар</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>Аспа ылдый өзгөрө алмай</translation>
+        <translation>Аспа ылдамдык салт-саха</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,7 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>Форматталу бул томдагы барлык маълуматты өчүрөт, сиз өзгөрө алмай, үзгөртүү үчүн сизге ыңгайлы үзгөрө алмай?</translation>
+        <translation>Бүтун сақлауыларды өңдөө үчүн бул дисктагы барлык мәлumat өчүрүлөт, үзүнүздөн өткөрүү үчүн ээ? У қайта қайтарыла алмайт.</translation>
     </message>
 </context>
 </TS>

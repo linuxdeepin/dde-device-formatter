@@ -6,7 +6,7 @@
     <message>
         <location filename="../view/finishpage.cpp" line="22"/>
         <source>Format successful</source>
-        <translation>التنسيق نجح</translation>
+        <translation>الفرمت ناجح</translation>
     </message>
 </context>
 <context>
@@ -14,7 +14,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>نعمل على التنسيق القرص، من فضلك انتظر...</translation>
+        <translation>نفرمت الديسك، رجاء انتظر...</translation>
     </message>
 </context>
 <context>
@@ -22,22 +22,22 @@
     <message>
         <location filename="../view/mainpage.cpp" line="99"/>
         <source>Type</source>
-        <translation>النوع</translation>
+        <translation>نوع</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="117"/>
         <source>Label</source>
-        <translation>الاسم</translation>
+        <translation>اسم</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
         <source>Quick Format</source>
-        <translation>تنسيق سريع</translation>
+        <translation>فرمت سريع</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>التنسيق سيحذف جميع البيانات الموجودة على القرص.</translation>
+        <translation>نفرمت الديسك سيحذف جميع البيانات الموجودة عليه.</translation>
     </message>
 </context>
 <context>
@@ -45,42 +45,42 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="68"/>
         <source>Format</source>
-        <translation>التنسيق</translation>
+        <translation>فرمت</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="250"/>
         <source>Continue</source>
-        <translation>المتابعة</translation>
+        <translation>استمر</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="256"/>
         <source>Formatting...</source>
-        <translation>جاري التنسيق...</translation>
+        <translation>نفرمت...</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="290"/>
         <source>Done</source>
-        <translation>تم</translation>
+        <translation>نفذ</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="303"/>
         <source>Quit</source>
-        <translation>الخروج</translation>
+        <translation>غادر</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>قرصك قد تم إزالته</translation>
+        <translation>ديسكك تم إزالته</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>فشل التنسيق الجهاز</translation>
+        <translation>فشل في فرمت الجهاز</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
         <source>Reformat</source>
-        <translation>إعادة التنسيق</translation>
+        <translation>فرمت مجدد</translation>
     </message>
 </context>
 <context>
@@ -88,7 +88,7 @@
     <message>
         <location filename="../dialogs/messagedialog.cpp" line="23"/>
         <source>OK</source>
-        <translation>أوك</translation>
+        <translation>أوكي</translation>
     </message>
 </context>
 <context>
@@ -96,17 +96,17 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="40"/>
         <source>System Disk</source>
-        <translation>القرص النظامي</translation>
+        <translation>الديسك النظامي</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 مشفر'</translation>
+        <translation>&apos;%1 مشفّر&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 وحّد</translation>
+        <translation>&apos;%1 وولوم&apos;</translation>
     </message>
 </context>
 <context>
@@ -114,7 +114,7 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde device formatter</translation>
+        <translation>dde جهاز فرمت</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
@@ -132,7 +132,7 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>التنسيق سيحذف جميع البيانات الموجودة على هذا القرص، هل أنت متأكد من أنك تريد المتابعة؟ لا يمكن استعادة البيانات.</translation>
+        <translation>نفرمت الديسك سيحذف جميع البيانات الموجودة عليه، هل أنت متأكد من أنك ترغب في الاستمرة؟ لا يمكن استعادة البيانات.</translation>
     </message>
 </context>
 </TS>

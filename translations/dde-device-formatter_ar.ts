@@ -37,7 +37,7 @@
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>سيُحذف التنسيق جميع البيانات الموجودة على القرص.</translation>
+        <translation>سيمسح التنسيق جميع البيانات الموجودة على القرص.</translation>
     </message>
 </context>
 <context>
@@ -45,12 +45,12 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="68"/>
         <source>Format</source>
-        <translation>تنسيق</translation>
+        <translation>التنسيق</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="250"/>
         <source>Continue</source>
-        <translation>استمر</translation>
+        <translation>الاستمرار</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="256"/>
@@ -101,12 +101,12 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 مشفر'</translation>
+        <translation>&apos;%1 مشفر&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 الحجم'</translation>
+        <translation>&apos;%1 وحّد&apos;</translation>
     </message>
 </context>
 <context>
@@ -114,7 +114,7 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde device formatter</translation>
+        <translation>dde تنسيق جهاز</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
@@ -132,7 +132,7 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>سيُحذف تنسيق هذا القرص جميع البيانات الموجودة عليه، هل أنت متأكد من استمرارك؟ لا يمكن استعادة البيانات.</translation>
+        <translation>سيمسح التنسيق جميع البيانات الموجودة على هذا القرص، هل أنت متأكد من استمرارك؟ لا يمكن استعادة البيانات.</translation>
     </message>
 </context>
 </TS>

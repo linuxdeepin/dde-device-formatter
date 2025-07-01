@@ -32,12 +32,12 @@
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
         <source>Quick Format</source>
-        <translation>Rapida Formato</translation>
+        <translation>Rapidaj formatado</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>Formatado estos forĵetos ĉiuj datoj sur la disko.</translation>
+        <translation>Formatado estos forto de ĉiuj datumoj sur la disko.</translation>
     </message>
 </context>
 <context>
@@ -65,22 +65,22 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="303"/>
         <source>Quit</source>
-        <translation>Forlasi</translation>
+        <translation>Ŝlosi</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>Via disko estis forplukolit</translation>
+        <translation>Via disko estis forprenita</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>Malsukcesis formati la enhavon</translation>
+        <translation>Formato de la aparato mal sukcesis</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
         <source>Reformat</source>
-        <translation>Reformati</translation>
+        <translation>Reformato</translation>
     </message>
 </context>
 <context>
@@ -96,17 +96,17 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="40"/>
         <source>System Disk</source>
-        <translation>Sistemo Disko</translation>
+        <translation>Sistemo disko</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 Ĉifrita'</translation>
+        <translation>&apos;%1 Ĉifrita&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 Volumo'</translation>
+        <translation>&apos;%1 Volumo&apos;</translation>
     </message>
 </context>
 <context>
@@ -114,17 +114,17 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde enhavformataj</translation>
+        <translation>dde aparato formatero</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
         <source>Device does not exist</source>
-        <translation>La enhavo ne ekzistas</translation>
+        <translation>Aparato ne ekzistas</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>La enhavo estas nur-lega</translation>
+        <translation>La aparato estas nur-lega</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,7 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>Formatado estos forĵetos ĉiuj datoj sur tiu disko, certe vi volas daŭrigi? Ĉi tio ne povas esti restaŭro.</translation>
+        <translation>Formatado estos forto de ĉiuj datumoj sur tiu disko, ĉu vi certas, ke vi volas daŭrigi? Ĉi tio ne povas esti restaŭrata.</translation>
     </message>
 </context>
 </TS>

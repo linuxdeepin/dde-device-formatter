@@ -6,7 +6,7 @@
     <message>
         <location filename="../view/finishpage.cpp" line="22"/>
         <source>Format successful</source>
-        <translation>වැරදි විය</translation>
+        <translation>සිදු කරන සාර්ථකත්වය</translation>
     </message>
 </context>
 <context>
@@ -14,7 +14,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>ඩිස්කය සැකසේ, පිළිතුරු කරන්න...</translation>
+        <translation>ඩිස්කය සිදු කරන ලද්දේ, මෙවර සිදු කරන්න...</translation>
     </message>
 </context>
 <context>
@@ -32,12 +32,12 @@
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
         <source>Quick Format</source>
-        <translation>සිතියම් සැකසීම</translation>
+        <translation>සිදු කිරීම</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>සැකසීම ඩිස්කයේ සියලුම දත්ත අල්ලා ගැනීමට අවශ්‍ය විය.</translation>
+        <translation>සිදු අරභන ලද්දේ ඩිස්කයේ සියලුම දත්ත අභාවිත වේ.</translation>
     </message>
 </context>
 <context>
@@ -45,42 +45,42 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="68"/>
         <source>Format</source>
-        <translation>සැකසීම</translation>
+        <translation>සිදු කරන්න</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="250"/>
         <source>Continue</source>
-        <translation>වැරදි කරන්න</translation>
+        <translation>සිදු කරන්න</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="256"/>
         <source>Formatting...</source>
-        <translation>සැකසීම...</translation>
+        <translation>සිදු කරන ලද්දේ...</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="290"/>
         <source>Done</source>
-        <translation>සාර්ථක කරන්න</translation>
+        <translation>සිදු කරන ලද්දේ</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="303"/>
         <source>Quit</source>
-        <translation>අවසන් කරන්න</translation>
+        <translation>පියාසිරීම</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>ඔබගේ ඩිස්කය අතිරික්ත කරන්න</translation>
+        <translation>ඔබගේ ඩිස්කය අත්හැරී තිබේ</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>ඩිවයිසය සැකසීම සාර්ථක වී නොමැත</translation>
+        <translation>ඩිවයිස් සිදු කරන නොහැකි</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
         <source>Reformat</source>
-        <translation>වැරදි සැකසීම</translation>
+        <translation>නව සිදු කිරීම</translation>
     </message>
 </context>
 <context>
@@ -88,7 +88,7 @@
     <message>
         <location filename="../dialogs/messagedialog.cpp" line="23"/>
         <source>OK</source>
-        <translation>ඇක්කා</translation>
+        <translation>ඇක්</translation>
     </message>
 </context>
 <context>
@@ -96,17 +96,17 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="40"/>
         <source>System Disk</source>
-        <translation>ස්යුස්ටම ඩිස්කය</translation>
+        <translation>ස්යුස්ටීම් ඩිස්කය</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 ප්‍රමාණය අල්ලා ගත විය'</translation>
+        <translation>&apos;%1 ආරක්ෂිත&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 වොලුමය'</translation>
+        <translation>&apos;%1 වෝලූමය&apos;</translation>
     </message>
 </context>
 <context>
@@ -114,17 +114,17 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde ඩිවයිස සැකසීම් අවයවය</translation>
+        <translation>ඩ්ඩ් ඩිවයිස් සිදු කරන ලද්දේ</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
         <source>Device does not exist</source>
-        <translation>ඩිවයිසය සොයා නොහැක</translation>
+        <translation>ඩිවයිස් නොපවති</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>ඩිවයිසය ප්‍රකාශිත විය</translation>
+        <translation>ඩිවයිස් ප්‍රකාශිත නොවේ</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,8 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>සැකසීම මෙම ඩිස්කයේ සියලුම දත්ත අල්ලා ගැනීමට අවශ්‍ය විය. ඔබ එය වැරදි කරන්න අපේක්ෂිත වියද? එය අතිරික්ත කරන්න නොහැක.</translation>
+        <translation>&gt;-
+ඩිස්කයේ සියලුම දත්ත අභාවිත වේ, ඔබ මෙවර සිදු කරන්න යෝජනා කරන්නේ ද? එය අභාවිත වීමට නොහැකිය.</translation>
     </message>
 </context>
 </TS>

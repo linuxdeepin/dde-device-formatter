@@ -70,7 +70,11 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>Ваш диск был удален</translation>
+        <translation>Ваш диск был отсоединен</translation>
+    </message>
+    <message>
+        <source>Your disk is removed when formatting</source>
+        <translation type="vanished">Ваш диск будет извлечен после форматирования</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
@@ -125,6 +129,10 @@
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
         <translation>Устройство только для чтения</translation>
+    </message>
+    <message>
+        <source>Cannot format local device</source>
+        <translation type="vanished">Не могу отформатировать локальное устройство</translation>
     </message>
 </context>
 <context>

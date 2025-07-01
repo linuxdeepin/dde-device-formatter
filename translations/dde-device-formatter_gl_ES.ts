@@ -14,7 +14,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>Formatando o disco, por favor espere...</translation>
+        <translation>Formatando o disco, por favor agarde...</translation>
     </message>
 </context>
 <context>
@@ -32,7 +32,7 @@
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
         <source>Quick Format</source>
-        <translation>Formato rápido</translation>
+        <translation>Formato Rápido</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
@@ -70,7 +70,11 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>O seu disco foi desmontado</translation>
+        <translation>O seu disco foi retirado</translation>
+    </message>
+    <message>
+        <source>Your disk is removed when formatting</source>
+        <translation type="vanished">Disco expulsado durante o formatado</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
@@ -96,17 +100,17 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="40"/>
         <source>System Disk</source>
-        <translation>Disco do sistema</translation>
+        <translation>Disco do Sistema</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 Encriptado'</translation>
+        <translation>&apos;%1 Cifrado&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 Volume'</translation>
+        <translation>&apos;%1 Volume&apos;</translation>
     </message>
 </context>
 <context>
@@ -114,7 +118,7 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde device formatter</translation>
+        <translation>dde dispositivo formatador</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
@@ -124,7 +128,11 @@
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>O dispositivo está en modo de lectura solo</translation>
+        <translation>O dispositivo é de lectura só</translation>
+    </message>
+    <message>
+        <source>Cannot format local device</source>
+        <translation type="vanished">Non se pode formatar o dispositivo local</translation>
     </message>
 </context>
 <context>

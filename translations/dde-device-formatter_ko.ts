@@ -70,7 +70,11 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>당신의 디스크가 제거되었습니다</translation>
+        <translation>드라이브가 제거되었습니다</translation>
+    </message>
+    <message>
+        <source>Your disk is removed when formatting</source>
+        <translation type="vanished">포맷중에 디스크가 제거되었습니다</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
@@ -101,12 +105,12 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 암호화됨'</translation>
+        <translation>%1 암호화됨</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 볼륨'</translation>
+        <translation>%1 볼륨</translation>
     </message>
 </context>
 <context>
@@ -125,6 +129,10 @@
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
         <translation>이 장치는 읽기 전용입니다</translation>
+    </message>
+    <message>
+        <source>Cannot format local device</source>
+        <translation type="vanished">로컬 장치는 포맷할 수 없습니다</translation>
     </message>
 </context>
 <context>

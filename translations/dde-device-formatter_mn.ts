@@ -6,7 +6,7 @@
     <message>
         <location filename="../view/finishpage.cpp" line="22"/>
         <source>Format successful</source>
-        <translation>Форматыг амжилттай гүйцэтгэсэн</translation>
+        <translation>Форматыг амжилттай хийсэн</translation>
     </message>
 </context>
 <context>
@@ -14,7 +14,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>Диск форматлах, байхад байна...</translation>
+        <translation>Диск форматлах, байхад түрээ...</translation>
     </message>
 </context>
 <context>
@@ -27,7 +27,7 @@
     <message>
         <location filename="../view/mainpage.cpp" line="117"/>
         <source>Label</source>
-        <translation>Нэр</translation>
+        <translation>Тэмдэг</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
@@ -37,7 +37,7 @@
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>Форматлах үед диск дээрх бүх үүлбэр устах болно.</translation>
+        <translation>Форматлахад диск дээрх бүх мэдээлэл устах болно.</translation>
     </message>
 </context>
 <context>
@@ -65,7 +65,7 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="303"/>
         <source>Quit</source>
-        <translation>Хаах</translation>
+        <translation>Гарах</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
@@ -75,7 +75,7 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>Хэрэглэгчийн үүлбэр форматлахад амжилтгүй байна</translation>
+        <translation>Хэрэглэгчийн үүсгэлээ форматлахад алдаа гарлаа</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
@@ -88,7 +88,7 @@
     <message>
         <location filename="../dialogs/messagedialog.cpp" line="23"/>
         <source>OK</source>
-        <translation>Хороо</translation>
+        <translation>Хүлээн авах</translation>
     </message>
 </context>
 <context>
@@ -101,12 +101,12 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 Үүлбэртэй'</translation>
+        <translation>&apos;%1 Үнэгдсэн&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 томоо'</translation>
+        <translation>&apos;%1 Тэмдэгт&apos;</translation>
     </message>
 </context>
 <context>
@@ -114,17 +114,17 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde үүлбэр форматлах програм</translation>
+        <translation>dde үүсгэлэн форматлах програм</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
         <source>Device does not exist</source>
-        <translation>Хэрэглэгч нь байхгүй</translation>
+        <translation>Хэрэглэгчийн үүсгэлээ байхгүй</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>Хэрэглэгч нь уншихад зориулагдсан</translation>
+        <translation>Хэрэглэгчийн үүсгэлээ унших боломжтой</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,7 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>Форматлах үед энэ диск дээрх бүх үүлбэр устах болно, үргэлжлүүлэхэд та итгэх юу? Үүнийг буцаах боломжгүй.</translation>
+        <translation>Форматлахад энэ диск дээрх бүх мэдээлэл устах болно, үргэлжлүүлэхэд итгэж байна уу? Түүнийг буцаах боломжгүй.</translation>
     </message>
 </context>
 </TS>

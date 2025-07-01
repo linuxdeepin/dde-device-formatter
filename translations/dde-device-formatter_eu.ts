@@ -6,7 +6,7 @@
     <message>
         <location filename="../view/finishpage.cpp" line="22"/>
         <source>Format successful</source>
-        <translation>Formatu egoki</translation>
+        <translation>Formato euskaraz</translation>
     </message>
 </context>
 <context>
@@ -14,7 +14,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>Diska formatatzen ari da, etorri gabe...</translation>
+        <translation>Formatitzando lehena, etorri helduta...</translation>
     </message>
 </context>
 <context>
@@ -32,12 +32,12 @@
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
         <source>Quick Format</source>
-        <translation>Formatua Hasteko</translation>
+        <translation>Formatua Hizkuntza</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>Formatatzeak diskan dagoen datu guztiak ezabatuko ditu.</translation>
+        <translation>Formatitzatzea lehena datu guztiak ezabatuko ditu.</translation>
     </message>
 </context>
 <context>
@@ -50,17 +50,17 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="250"/>
         <source>Continue</source>
-        <translation>Jarraitu</translation>
+        <translation>Jarri</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="256"/>
         <source>Formatting...</source>
-        <translation>Formatatzen...</translation>
+        <translation>Formatitzatzen...</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="290"/>
         <source>Done</source>
-        <translation>Bite</translation>
+        <translation>Bukatu</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="303"/>
@@ -70,12 +70,12 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>Zure diskak kendu da</translation>
+        <translation>Zure lehena kendu da</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>Gertu ezin da formatatzeko gertu</translation>
+        <translation>Gertu ez da formatitzatzen</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
@@ -101,12 +101,12 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 Enkriptatua'</translation>
+        <translation>&apos;%1 Enkriptatua&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 Bolumena'</translation>
+        <translation>&apos;%1 Bolumena&apos;</translation>
     </message>
 </context>
 <context>
@@ -114,17 +114,17 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde gertu formatatzailea</translation>
+        <translation>dde gertu formatitzatzailea</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
         <source>Device does not exist</source>
-        <translation>Gertu ez da existitzen</translation>
+        <translation>Gertua ez da existitzen</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>Gertu bakarrik irakurrita dago</translation>
+        <translation>Gertua irakurri-erakurrikoa da</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,7 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>Formatatzeak gertu horretan dagoen datu guztiak ezabatuko ditu, seguru al da zuek jarraitu nahi duzula? Ezin da berrezarri.</translation>
+        <translation>Formatitzatzea lehena datu guztiak ezabatuko ditu, seguruago ez da jarri? Ezin da berreskuratu.</translation>
     </message>
 </context>
 </TS>

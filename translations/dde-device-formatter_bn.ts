@@ -32,12 +32,12 @@
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
         <source>Quick Format</source>
-        <translation>ট্রান্সফর্ম ফরম্যাট</translation>
+        <translation>ট্যাচ ফরম্যাট</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>ফরম্যাট করা ডিস্কে সমস্ত ডেটা মুছে দেবে।</translation>
+        <translation>ফরম্যাট করা ডিস্কে সমস্ত ডেটা মুছে যাবে।</translation>
     </message>
 </context>
 <context>
@@ -70,12 +70,16 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>আপনার ডিস্ক অপসারণ করা হয়েছে</translation>
+        <translation>আপনার ডিস্কটি অপসারণ করা হয়েছে</translation>
+    </message>
+    <message>
+        <source>Your disk is removed when formatting</source>
+        <translation type="vanished">ফরম্যাট করার সময় আপনার ডিস্কটি সড়িয়ে ফেলা হয়েসে</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>ডিভাইসটি ফরম্যাট করা হয়নি</translation>
+        <translation>ডিভিস ফরম্যাট করা হয়নি</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
@@ -101,12 +105,12 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 চিপ্স করা হয়েছে'</translation>
+        <translation>&apos;%1 চিপ্ট করা হয়েছে&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 ভলিউম'</translation>
+        <translation>&apos;%1 ভলিউম&apos;</translation>
     </message>
 </context>
 <context>
@@ -114,7 +118,7 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>ডিডি ডিভাইস ফরম্যাটার</translation>
+        <translation>ডিডি ডিভিস ফরম্যাটার</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
@@ -124,7 +128,11 @@
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>ডিভাইসটি পঠন করা যায় কিন্তু লেখন করা যায় না</translation>
+        <translation>ডিভিসটি পাঠযোগ্য</translation>
+    </message>
+    <message>
+        <source>Cannot format local device</source>
+        <translation type="vanished">লোকাল ডিভাইস ফরমেট করা যাচ্ছে না</translation>
     </message>
 </context>
 <context>
@@ -132,7 +140,7 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>এই ডিস্কে সমস্ত ডেটা মুছে দেবে ফরম্যাট করা, আপনি আরো চালিয়ে যাবেন কি? এটি ফিরিয়ে নেওয়া যাবে না।</translation>
+        <translation>এই ডিস্কে সমস্ত ডেটা মুছে যাবে, আপনি আরো চালিয়ে যাওয়ার জন্য নিশ্চিত কি? এটি পুনরুদ্ধার করা যাবে না।</translation>
     </message>
 </context>
 </TS>

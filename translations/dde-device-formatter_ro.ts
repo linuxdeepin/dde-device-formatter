@@ -60,7 +60,7 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="290"/>
         <source>Done</source>
-        <translation>Terminat</translation>
+        <translation>Finalizat</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="303"/>
@@ -70,12 +70,12 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>Discul dvs. a fost scos</translation>
+        <translation>Discul dumneavoastră a fost scos</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>Eșecul formatării dispozitivului</translation>
+        <translation>Nu s-a reușit formatarea dispozitivului</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
@@ -101,12 +101,12 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 Criptat'</translation>
+        <translation>&apos;%1 Criptat&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 Volum'</translation>
+        <translation>&apos;%1 Volum&apos;</translation>
     </message>
 </context>
 <context>
@@ -124,7 +124,7 @@
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>Dispozitivul este doar pentru citire</translation>
+        <translation>Dispozitivul este doar pentru citit</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,7 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>Formatarea va șterge toate datele de pe acest disc. Ești sigur că vrei să continui? Nu poate fi restaurat.</translation>
+        <translation>Formatarea va șterge toate datele de pe acest disc, sunteți sigur că doriți să continuați? Nu poate fi restaurat.</translation>
     </message>
 </context>
 </TS>

@@ -73,6 +73,10 @@
         <translation>Ваш диск је уклоњен</translation>
     </message>
     <message>
+        <source>Your disk is removed when formatting</source>
+        <translation type="vanished">Ваш диск је уклоњен током форматирања</translation>
+    </message>
+    <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
         <translation>Неуспело форматирање уређаја</translation>
@@ -114,7 +118,7 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde форматер уређаја</translation>
+        <translation>dde уређај за форматирање</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
@@ -125,6 +129,10 @@
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
         <translation>Уређај је само за читање</translation>
+    </message>
+    <message>
+        <source>Cannot format local device</source>
+        <translation type="vanished">Не могу да форматирам локални уређај</translation>
     </message>
 </context>
 <context>

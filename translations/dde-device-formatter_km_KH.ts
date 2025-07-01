@@ -6,7 +6,7 @@
     <message>
         <location filename="../view/finishpage.cpp" line="22"/>
         <source>Format successful</source>
-        <translation>ការបញ្ចែញទម្រង់បានជោគជំនគ</translation>
+        <translation>ការបញ្ចេញទម្រង់បានជោគជ័យ</translation>
     </message>
 </context>
 <context>
@@ -14,7 +14,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>កំពុងបញ្ចែញទម្រង់ដៃគឺ សូមរង់ចាំ...</translation>
+        <translation>កំពុងបញ្ចេញទម្រង់ក្នុងឌីសខាងក្រៅ សូមរង់ចាំ...</translation>
     </message>
 </context>
 <context>
@@ -27,17 +27,17 @@
     <message>
         <location filename="../view/mainpage.cpp" line="117"/>
         <source>Label</source>
-        <translation>សំឡេង</translation>
+        <translation>ស្លាក</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
         <source>Quick Format</source>
-        <translation>បញ្ចែញទម្រង់ប្រហែល</translation>
+        <translation>បញ្ចេញទម្រង់ដោយប្រាកដ</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>ការបញ្ចែញទម្រង់នឹងលុបទិន្នន័យទាំងអស់នៅលើដៃគឺ។</translation>
+        <translation>ការបញ្ចេញទម្រង់នឹងលុបចោលទិន្នន័យទាំងអស់នៅលើឌីស។</translation>
     </message>
 </context>
 <context>
@@ -45,7 +45,7 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="68"/>
         <source>Format</source>
-        <translation>បញ្ចែញទម្រង់</translation>
+        <translation>បញ្ចេញទម្រង់</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="250"/>
@@ -55,32 +55,32 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="256"/>
         <source>Formatting...</source>
-        <translation>កំពុងបញ្ចែញទម្រង់...</translation>
+        <translation>កំពុងបញ្ចេញទម្រង់...</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="290"/>
         <source>Done</source>
-        <translation>បំពេញ</translation>
+        <translation>បញ្ចប់</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="303"/>
         <source>Quit</source>
-        <translation>ចាប់ផ្តើម</translation>
+        <translation>ចាកចេញ</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>ដៃគឺរបស់អ្នកត្រូវបានដកចេញ</translation>
+        <translation>ឌីសរបស់អ្នកត្រូវបានដកចេញ</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>ការបញ្ចែញទម្រង់ដៃគឺបានបរាជ័យ</translation>
+        <translation>មិនអាចបញ្ចេញទម្រង់ឧបករណ៍បាន</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
         <source>Reformat</source>
-        <translation>បញ្ចែញទម្រង់ឡើងវិញ</translation>
+        <translation>បញ្ចេញទម្រង់ឡើងវិញ</translation>
     </message>
 </context>
 <context>
@@ -88,7 +88,7 @@
     <message>
         <location filename="../dialogs/messagedialog.cpp" line="23"/>
         <source>OK</source>
-        <translation>សម្រេច</translation>
+        <translation>បាទ/អ្នក</translation>
     </message>
 </context>
 <context>
@@ -96,17 +96,17 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="40"/>
         <source>System Disk</source>
-        <translation>ដៃគឺប្រព័ន្ធដែលបានបញ្ចែញទម្រង់</translation>
+        <translation>ឌីសប្រព័ន្ធមួយ</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 បានបញ្ចែញទម្រង់'</translation>
+        <translation>&apos;%1 បានបិទសំខាន់&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 ប្រភេទ'</translation>
+        <translation>&apos;%1 ប្រភេទទំនើប&apos;</translation>
     </message>
 </context>
 <context>
@@ -114,17 +114,17 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>កម្មវិធីបញ្ចែញទម្រង់ដៃគឺ DDE</translation>
+        <translation>កម្មវិធីបញ្ចេញទម្រង់ឌីស DDE</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
         <source>Device does not exist</source>
-        <translation>មិនមានឧបករណ៍ណាមួយនៅទីនោះ</translation>
+        <translation>ឧបករណ៍មិនមានទេ</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>ឧបករណ៍នេះមានសមត្ថភាពអាចអានបានតែមិនអាចកែប្រែបាន</translation>
+        <translation>ឧបករណ៍នេះមានសុំសុវត្ថិភាព</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,8 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>ការបញ្ចែញទម្រង់នឹងលុបទិន្នន័យទាំងអស់នៅលើដៃគឺនេះ តើអ្នកចង់បន្តទេ? វាមិនអាចនឹងត្រលប់មកវិញបានទេ។</translation>
+        <translation>&gt;-
+ការបញ្ចេញទម្រង់នឹងលុបចោលទិន្នន័យទាំងអស់នៅលើឌីសនេះ តើអ្នកកំពុងប្រាកដថាចង់បន្តទេ? វាមិនអាចត្រលប់មកវិញបាន។</translation>
     </message>
 </context>
 </TS>

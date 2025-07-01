@@ -6,7 +6,7 @@
     <message>
         <location filename="../view/finishpage.cpp" line="22"/>
         <source>Format successful</source>
-        <translation>التنسيق ناجح</translation>
+        <translation>Formatage réussi</translation>
     </message>
 </context>
 <context>
@@ -14,7 +14,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>يتم التنسيق القرص، من فضلك انتظر...</translation>
+        <translation>Formatage du disque, veuillez attendre...</translation>
     </message>
 </context>
 <context>
@@ -32,12 +32,12 @@
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
         <source>Quick Format</source>
-        <translation>تنسيق سريع</translation>
+        <translation>Formatage rapide</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>سيؤدي التنسيق إلى حذف جميع البيانات على القرص.</translation>
+        <translation>Le formatage supprimera toutes les données du disque.</translation>
     </message>
 </context>
 <context>
@@ -55,7 +55,7 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="256"/>
         <source>Formatting...</source>
-        <translation>يتم التنسيق...</translation>
+        <translation>Formatage en cours...</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="290"/>
@@ -70,17 +70,17 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>تم إزالة قرصك</translation>
+        <translation>Votre disque a été retiré</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>فشل التنسيق الجهاز</translation>
+        <translation>Échec du formatage du périphérique</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
         <source>Reformat</source>
-        <translation>إعادة التنسيق</translation>
+        <translation>Reformater</translation>
     </message>
 </context>
 <context>
@@ -96,17 +96,17 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="40"/>
         <source>System Disk</source>
-        <translation>القرص النظامي</translation>
+        <translation>Disque système</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 مشفر'</translation>
+        <translation>&apos;%1 Chiffré&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 الحجم'</translation>
+        <translation>&apos;%1 Volume&apos;</translation>
     </message>
 </context>
 <context>
@@ -119,12 +119,12 @@
     <message>
         <location filename="../main.cpp" line="97"/>
         <source>Device does not exist</source>
-        <translation>L'appareil n'existe pas</translation>
+        <translation>L&apos;appareil n&apos;existe pas</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>الجهاز فقط القراءة</translation>
+        <translation>Le périphérique est en mode lecture seule</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,7 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>سيؤدي التنسيق إلى حذف جميع البيانات على هذا القرص، هل أنت متأكد من الرغبة في الاستمرار؟ لا يمكن استعادة البيانات.</translation>
+        <translation>Le formatage supprimera toutes les données de ce disque, êtes-vous sûr de vouloir continuer ? Elles ne pourront pas être restaurées.</translation>
     </message>
 </context>
 </TS>

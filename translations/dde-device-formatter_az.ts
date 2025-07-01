@@ -14,7 +14,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>Disk formatlanır, lütfen bekleyin...</translation>
+        <translation>Disk formatlanır, kүтәrin...</translation>
     </message>
 </context>
 <context>
@@ -22,7 +22,7 @@
     <message>
         <location filename="../view/mainpage.cpp" line="99"/>
         <source>Type</source>
-        <translation>Növ</translation>
+        <translation>Tip</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="117"/>
@@ -32,12 +32,12 @@
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
         <source>Quick Format</source>
-        <translation>Hızlı Format</translation>
+        <translation>Tez Format</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>Formatlama diskdəki bütün məlumatları siləcək.</translation>
+        <translation>Formatlama diskdәki hamma mәlumatı silir.</translation>
     </message>
 </context>
 <context>
@@ -80,7 +80,7 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
         <source>Reformat</source>
-        <translation>Yeniden formatla</translation>
+        <translation>Təkrar formatla</translation>
     </message>
 </context>
 <context>
@@ -88,7 +88,7 @@
     <message>
         <location filename="../dialogs/messagedialog.cpp" line="23"/>
         <source>OK</source>
-        <translation>Tamdır</translation>
+        <translation>OK</translation>
     </message>
 </context>
 <context>
@@ -101,12 +101,12 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 Şifrələnmiş'</translation>
+        <translation>&apos;%1 Şifrələndi&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 Hacmi'</translation>
+        <translation>&apos;%1 Hacmi&apos;</translation>
     </message>
 </context>
 <context>
@@ -124,7 +124,7 @@
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>Cihaz oxunmaq üçün yalnız</translation>
+        <translation>Cihaz oxunmaq üçün yeganədir</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,7 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>Formatlama bu diskdəki bütün məlumatları siləcək, davam etmək istəyirsinizmi? Onlar geri qaytarılmayacaq.</translation>
+        <translation>Formatlama bu diskdәki hamma mәlumatı silir, davam etmək istəyirsinizmi? Onu qaytarılmaq olmaz.</translation>
     </message>
 </context>
 </TS>

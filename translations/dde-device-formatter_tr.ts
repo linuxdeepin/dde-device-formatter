@@ -73,6 +73,10 @@
         <translation>Diskiniz çıkarıldı</translation>
     </message>
     <message>
+        <source>Your disk is removed when formatting</source>
+        <translation type="vanished">Biçimlendirme sırasında diskiniz kaldırılıyor</translation>
+    </message>
+    <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
         <translation>Cihaz biçimlendirilemedi</translation>
@@ -125,6 +129,10 @@
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
         <translation>Cihaz sadece salt okunur</translation>
+    </message>
+    <message>
+        <source>Cannot format local device</source>
+        <translation type="vanished">Yerel cihaz biçimlendirilemiyor</translation>
     </message>
 </context>
 <context>

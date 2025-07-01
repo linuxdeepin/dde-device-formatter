@@ -14,7 +14,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>S'està formatant el disc. Espereu...</translation>
+        <translation>S&apos;està formatant el disc. Espereu...</translation>
     </message>
 </context>
 <context>
@@ -55,7 +55,7 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="256"/>
         <source>Formatting...</source>
-        <translation>S'està formatant...</translation>
+        <translation>S&apos;està formatant...</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="290"/>
@@ -70,7 +70,11 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>El disc ha estat extret</translation>
+        <translation>El disc he ha estat extret</translation>
+    </message>
+    <message>
+        <source>Your disk is removed when formatting</source>
+        <translation type="vanished">El disc s&apos;extreu quan es formata.</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
@@ -88,7 +92,7 @@
     <message>
         <location filename="../dialogs/messagedialog.cpp" line="23"/>
         <source>OK</source>
-        <translation>D'acord</translation>
+        <translation>D&apos;acord</translation>
     </message>
 </context>
 <context>
@@ -114,7 +118,7 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde device formatter</translation>
+        <translation>dde formatador de dispositius</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
@@ -125,6 +129,10 @@
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
         <translation>El dispositiu és només de lectura.</translation>
+    </message>
+    <message>
+        <source>Cannot format local device</source>
+        <translation type="vanished">No es pot formatar el dispositiu local.</translation>
     </message>
 </context>
 <context>

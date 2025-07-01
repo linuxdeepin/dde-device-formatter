@@ -14,7 +14,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>Memformat disk, mohon menunggu...</translation>
+        <translation>Memformat disk, mohon tunggu...</translation>
     </message>
 </context>
 <context>
@@ -37,7 +37,7 @@
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>Memformat akan menghapus semua data di disk.</translation>
+        <translation>Memformat akan menghapus semua data pada disk.</translation>
     </message>
 </context>
 <context>
@@ -70,7 +70,11 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>Disk Anda telah diangkat</translation>
+        <translation>Disk Anda telah dihapus</translation>
+    </message>
+    <message>
+        <source>Your disk is removed when formatting</source>
+        <translation type="vanished">Diska Anda dihapus ketika memformat</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
@@ -101,12 +105,12 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 Terenkripsi'</translation>
+        <translation>&apos;%1 Terenkripsi&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 Volume'</translation>
+        <translation>&apos;%1 Volume&apos;</translation>
     </message>
 </context>
 <context>
@@ -126,13 +130,17 @@
         <source>The device is read-only</source>
         <translation>Perangkat ini hanya untuk dibaca</translation>
     </message>
+    <message>
+        <source>Cannot format local device</source>
+        <translation type="vanished">Tidak dapat memformat diska lokal</translation>
+    </message>
 </context>
 <context>
     <name>WarnPage</name>
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>Memformat akan menghapus semua data di disk ini, apakah Anda yakin ingin melanjutkan? Tidak dapat dipulihkan.</translation>
+        <translation>Memformat akan menghapus semua data pada disk ini, apakah Anda yakin ingin melanjutkan? Tidak dapat dipulihkan.</translation>
     </message>
 </context>
 </TS>

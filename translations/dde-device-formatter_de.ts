@@ -74,6 +74,10 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Your disk is removed when formatting</source>
+        <translation type="vanished">Ihre Festplatte wird beim Formatieren entfernt</translation>
+    </message>
+    <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
         <translation>Fehler beim Formatieren des Geräts</translation>
@@ -126,6 +130,10 @@
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
         <translation>Das Gerät ist schreibgeschützt</translation>
+    </message>
+    <message>
+        <source>Cannot format local device</source>
+        <translation type="vanished">Lokales Gerät kann nicht formatiert werden</translation>
     </message>
 </context>
 <context>

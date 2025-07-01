@@ -6,7 +6,7 @@
     <message>
         <location filename="../view/finishpage.cpp" line="22"/>
         <source>Format successful</source>
-        <translation>Formatu imeshindwa</translation>
+        <translation>Umbadiliwaji wa format uliokomwa</translation>
     </message>
 </context>
 <context>
@@ -14,7 +14,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>Inafanana diskilishi, tafadhali kuchukua...</translation>
+        <translation>Umbadiliwaji wa disk, tafadhali ongeza...</translation>
     </message>
 </context>
 <context>
@@ -22,22 +22,22 @@
     <message>
         <location filename="../view/mainpage.cpp" line="99"/>
         <source>Type</source>
-        <translation>Mara</translation>
+        <translation>Mipaka</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="117"/>
         <source>Label</source>
-        <translation>Mipango</translation>
+        <translation>Mipaka</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
         <source>Quick Format</source>
-        <translation>Formatu ya Kifalaki</translation>
+        <translation>Format ya Kifalaki</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>Formatu inaonyesha kufuta data zote katika diskilishi.</translation>
+        <translation>Umbadiliwaji wa disk inaweza kusababisha kufuta data zote kwenye disk.</translation>
     </message>
 </context>
 <context>
@@ -45,42 +45,42 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="68"/>
         <source>Format</source>
-        <translation>Formatu</translation>
+        <translation>Format</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="250"/>
         <source>Continue</source>
-        <translation>Jitokeza</translation>
+        <translation>Jitenge</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="256"/>
         <source>Formatting...</source>
-        <translation>Inafanana...</translation>
+        <translation>Umbadiliwaji...</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="290"/>
         <source>Done</source>
-        <translation>Pumzike</translation>
+        <translation>Penge</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="303"/>
         <source>Quit</source>
-        <translation>Kutoka</translation>
+        <translation>Kutumwa</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>Diskilishi yako inaonyesha kutoka</translation>
+        <translation>Disk yako ilikuwa iliokomwa</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>Hakikishindwa kufanana na kifanana</translation>
+        <translation>Umbadiliwaji wa pereti ilikuwa imelipwa</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
         <source>Reformat</source>
-        <translation>Kifanana tena</translation>
+        <translation>Umbadiliwaji ya kifalaki</translation>
     </message>
 </context>
 <context>
@@ -96,17 +96,17 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="40"/>
         <source>System Disk</source>
-        <translation>Diskilishi ya Mazinga</translation>
+        <translation>Disk ya Mazingira</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 Imepelekwa'</translation>
+        <translation>&apos;%1 Iliokomwa&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 Mipango'</translation>
+        <translation>&apos;%1 Volume&apos;</translation>
     </message>
 </context>
 <context>
@@ -114,17 +114,17 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde kifanana ya kifanana</translation>
+        <translation>Mandhari wa pereti ya DDE</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
         <source>Device does not exist</source>
-        <translation>Kifanana hakuna</translation>
+        <translation>Pereti inayotaka kufunza inaonyeshwa</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>Kifanana ni kifungu</translation>
+        <translation>Pereti inaonyeshwa inaonyeshwa</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,7 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>Formatu inaonyesha kufuta data zote katika diskilishi hii, tafadhali kuchukua kujitokeza? Hali inaonyesha kufuta.</translation>
+        <translation>Umbadiliwaji wa disk inaweza kusababisha kufuta data zote kwenye disk hii, tafadhali ongeza kujitenge? Hii inaweza kufuta kwa kipengele.</translation>
     </message>
 </context>
 </TS>

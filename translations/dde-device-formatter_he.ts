@@ -6,7 +6,7 @@
     <message>
         <location filename="../view/finishpage.cpp" line="22"/>
         <source>Format successful</source>
-        <translation>ה포ורמט הושלם</translation>
+        <translation>הפורמט בוצע בהצלחה</translation>
     </message>
 </context>
 <context>
@@ -14,7 +14,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>מפורמט את הדיסק, אנא המתן...</translation>
+        <translation>מתקדמים בפורמט הדיסק, אנא המתן...</translation>
     </message>
 </context>
 <context>
@@ -32,12 +32,12 @@
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
         <source>Quick Format</source>
-        <translation>포르מט מהיר</translation>
+        <translation>פורמט מהיר</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>ה포ורמט ימחק את כל המידע על הדיסק.</translation>
+        <translation>הפורמט ימחק את כל המידע על הדיסק</translation>
     </message>
 </context>
 <context>
@@ -50,12 +50,12 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="250"/>
         <source>Continue</source>
-        <translation> המשך</translation>
+        <translation>המשך</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="256"/>
         <source>Formatting...</source>
-        <translation>מפורמט...</translation>
+        <translation>מתקדמים בפורמט...</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="290"/>
@@ -70,12 +70,12 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>הדיסק שהוסר</translation>
+        <translation>הדיסק שלך הוסר</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>ה포ורמט נכשל עבור התקן</translation>
+        <translation>הפורמט נכשל במכשיר</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
@@ -96,17 +96,17 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="40"/>
         <source>System Disk</source>
-        <translation>דיסק חיצוני</translation>
+        <translation>דיסק מערכת</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 מוצפן'</translation>
+        <translation>&apos;%1 מוצפן&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 נפח'</translation>
+        <translation>&apos;%1 נפח&apos;</translation>
     </message>
 </context>
 <context>
@@ -114,17 +114,17 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde device formatter</translation>
+        <translation>מתקין דיסק דד אפליקציה</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
         <source>Device does not exist</source>
-        <translation>התקן לא קיים</translation>
+        <translation>המכשיר לא קיים</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>התקן הוא קרוא רק</translation>
+        <translation>המכשיר קרוא-רק</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,7 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>ה포ורמט ימחק את כל המידע על הדיסק, האם אתה בטוח שברצונך להמשיך? הוא לא יכול להיות לשחזר.</translation>
+        <translation>הפורמט ימחק את כל המידע על הדיסק הזה, האם אתה בטוח שברצונך ממשך? לא ניתן לשחזר את המידע.</translation>
     </message>
 </context>
 </TS>

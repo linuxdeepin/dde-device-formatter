@@ -73,9 +73,13 @@
         <translation>Το δίσκος σας έχει αποσυρθεί</translation>
     </message>
     <message>
+        <source>Your disk is removed when formatting</source>
+        <translation type="vanished">Ο δίσκος σας αφαιρέθηκε κατά τη μορφοποίηση</translation>
+    </message>
+    <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>Αποτυχία της φόρματτινγκ του συσκευαστικού</translation>
+        <translation>Απέτυχε η τοποθέτηση του συσκευασμένου δίσκου</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
@@ -96,17 +100,17 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="40"/>
         <source>System Disk</source>
-        <translation>Δίσκος Συστήματος</translation>
+        <translation>Δίσκος συστήματος</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 Κρυπτογραφημένος'</translation>
+        <translation>&apos;%1 Κρυπτογραφημένος&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 Χώρος'</translation>
+        <translation>&apos;%1 Χώρος&apos;</translation>
     </message>
 </context>
 <context>
@@ -124,7 +128,11 @@
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>Το συσκευαστικό είναι αναγνωστικό</translation>
+        <translation>Η συσκευή είναι αναγνώσιμη μόνο</translation>
+    </message>
+    <message>
+        <source>Cannot format local device</source>
+        <translation type="vanished">Δεν είναι δυνατή η μορφοποίηση της τοπικής συσκευής</translation>
     </message>
 </context>
 <context>

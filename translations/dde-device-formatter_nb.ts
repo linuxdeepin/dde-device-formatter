@@ -6,7 +6,7 @@
     <message>
         <location filename="../view/finishpage.cpp" line="22"/>
         <source>Format successful</source>
-        <translation>Formateringen har vellykket</translation>
+        <translation>Formattering ble fullført</translation>
     </message>
 </context>
 <context>
@@ -32,12 +32,12 @@
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
         <source>Quick Format</source>
-        <translation>Rapid Format</translation>
+        <translation>Rapid format</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>Formatering vil slette alle data på disken.</translation>
+        <translation>Formatteringen vil slette alle data på disken.</translation>
     </message>
 </context>
 <context>
@@ -73,9 +73,13 @@
         <translation>Din disk har blitt fjernet</translation>
     </message>
     <message>
+        <source>Your disk is removed when formatting</source>
+        <translation type="vanished">Enheten ble fjernet mens formateringen pågikk</translation>
+    </message>
+    <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>Formateringen feilet</translation>
+        <translation>Formatteringen feilet</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
@@ -101,12 +105,12 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 Kryptert'</translation>
+        <translation>&apos;%1 Kryptert&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 Volum'</translation>
+        <translation>&apos;%1 Volum&apos;</translation>
     </message>
 </context>
 <context>
@@ -124,7 +128,11 @@
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>Enhetskontoen er slettet</translation>
+        <translation>Enheten er skrivebeskyttet</translation>
+    </message>
+    <message>
+        <source>Cannot format local device</source>
+        <translation type="vanished">Kan ikke formatere lokal enhet</translation>
     </message>
 </context>
 <context>
@@ -132,7 +140,7 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>Formatering vil slette alle data på denne disken, er du sikker på at du vil fortsette? Det kan ikke gjenopprettes.</translation>
+        <translation>Formatteringen vil slette alle data på denne disken, er du sikker på at du vil fortsette? Det kan ikke gjenopprettes.</translation>
     </message>
 </context>
 </TS>

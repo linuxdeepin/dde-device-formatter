@@ -6,7 +6,7 @@
     <message>
         <location filename="../view/finishpage.cpp" line="22"/>
         <source>Format successful</source>
-        <translation>Formaat is suksesvol</translation>
+        <translation>Formaat suksesvol</translation>
     </message>
 </context>
 <context>
@@ -14,7 +14,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>Formaat van die skerm, asseblief wag...</translation>
+        <translation>Formaat die skerm, asseblief wag...</translation>
     </message>
 </context>
 <context>
@@ -22,7 +22,7 @@
     <message>
         <location filename="../view/mainpage.cpp" line="99"/>
         <source>Type</source>
-        <translation>Tipe</translation>
+        <translation>Soort</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="117"/>
@@ -50,7 +50,7 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="250"/>
         <source>Continue</source>
-        <translation>Voortgaan</translation>
+        <translation>Vooruit</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="256"/>
@@ -60,7 +60,7 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="290"/>
         <source>Done</source>
-        <translation>Doneer</translation>
+        <translation>Klaar</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="303"/>
@@ -70,7 +70,7 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>U skerm is verwijder</translation>
+        <translation>Ue skerm is verwyder</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
@@ -96,17 +96,17 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="40"/>
         <source>System Disk</source>
-        <translation>Sisteem Skerm</translation>
+        <translation>Sisteemskerm</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 Verklaar'</translation>
+        <translation>&apos;%1 Verwyder&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 Volume'</translation>
+        <translation>&apos;%1 Volume&apos;</translation>
     </message>
 </context>
 <context>
@@ -114,7 +114,7 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde toestel formaatprogram</translation>
+        <translation>dde toestel formater</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
@@ -132,7 +132,7 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>Formaat sal alle data op hierdie skerm verwyder, is u seker dat u wil voortgaan? Dit kan nie herstel word nie.</translation>
+        <translation>Formaat sal alle data op hierdie skerm verwyder. Wees seker dat u wil voortgaan? Dit kan nie herstel word nie.</translation>
     </message>
 </context>
 </TS>

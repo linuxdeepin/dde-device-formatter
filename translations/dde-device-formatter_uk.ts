@@ -74,6 +74,10 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Your disk is removed when formatting</source>
+        <translation type="vanished">У процесі форматування ваш диск було вилучено</translation>
+    </message>
+    <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
         <translation>Не вдалося виконати форматування пристрою</translation>
@@ -126,6 +130,10 @@
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
         <translation>Пристрій призначено лише для читання</translation>
+    </message>
+    <message>
+        <source>Cannot format local device</source>
+        <translation type="vanished">Неможливо виконати форматування локального пристрою</translation>
     </message>
 </context>
 <context>

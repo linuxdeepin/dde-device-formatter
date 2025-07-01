@@ -70,7 +70,11 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>तपाईँको डिस्क हटाइएको छ</translation>
+        <translation>आपको डिस्क बर्खास्त गरियो</translation>
+    </message>
+    <message>
+        <source>Your disk is removed when formatting</source>
+        <translation type="vanished">फर्म्याट गर्दा तपाईंको डिस्क हटाइन्छ</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
@@ -115,7 +119,7 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde डिवाइस फॉर्मेटर</translation>
+        <translation>डीडीई डिवाइस फॉर्मेटर</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
@@ -126,6 +130,10 @@
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
         <translation>उपकरण पढ्ने मात्र हो</translation>
+    </message>
+    <message>
+        <source>Cannot format local device</source>
+        <translation type="vanished">स्थानीय उपकरण फर्म्याट गर्न सकिदैन</translation>
     </message>
 </context>
 <context>

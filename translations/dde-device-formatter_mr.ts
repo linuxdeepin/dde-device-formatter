@@ -6,7 +6,7 @@
     <message>
         <location filename="../view/finishpage.cpp" line="22"/>
         <source>Format successful</source>
-        <translation>फॉरमैट सार्वजनिक झाला</translation>
+        <translation>फॉरमेट स्वीकृत</translation>
     </message>
 </context>
 <context>
@@ -14,7 +14,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>डिस्क फॉरमैट करत आहे, कृपया वेट करा...</translation>
+        <translation>डिस्क फॉरमेट करत आहे, कृपया वेट करा...</translation>
     </message>
 </context>
 <context>
@@ -32,12 +32,12 @@
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
         <source>Quick Format</source>
-        <translation>फॉरमैट करा</translation>
+        <translation>हरकत फॉरमेट</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>फॉरमैट करण्याने डिस्क वरील सर्व डेटा नष्ट होईल.</translation>
+        <translation>फॉरमेट करण्याने डिस्क वरील सर्व डेटा नष्ट होईल.</translation>
     </message>
 </context>
 <context>
@@ -45,17 +45,17 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="68"/>
         <source>Format</source>
-        <translation>फॉरमैट</translation>
+        <translation>फॉरमेट</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="250"/>
         <source>Continue</source>
-        <translation>त्याच रीतीने चालू ठेवा</translation>
+        <translation>विस्तार</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="256"/>
         <source>Formatting...</source>
-        <translation>फॉरमैट करत आहे...</translation>
+        <translation>फॉरमेट करत आहे...</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="290"/>
@@ -65,22 +65,22 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="303"/>
         <source>Quit</source>
-        <translation> बंद करा</translation>
+        <translation>खाली</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>तुमचा डिस्क विहित करण्यात आला आहे</translation>
+        <translation>तुमची डिस्क आहे आणि ती दुर केली आहे</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>उपकरण फॉरमैट करता अयशस्वी झाले</translation>
+        <translation>उपकरण फॉरमेट करता अयशस्वी राहिले</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
         <source>Reformat</source>
-        <translation>पुन्हा फॉरमैट करा</translation>
+        <translation>पुन्हा फॉरमेट</translation>
     </message>
 </context>
 <context>
@@ -88,7 +88,7 @@
     <message>
         <location filename="../dialogs/messagedialog.cpp" line="23"/>
         <source>OK</source>
-        <translation>ओके</translation>
+        <translation>ओक</translation>
     </message>
 </context>
 <context>
@@ -101,12 +101,12 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 चीप करण्यात आली'</translation>
+        <translation>&apos;%1 शिफ्ट केलेले&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 वॉल्यूम'</translation>
+        <translation>&apos;%1 वॉल्यूम&apos;</translation>
     </message>
 </context>
 <context>
@@ -114,17 +114,17 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde डिव्हाइस फॉर्मेटर</translation>
+        <translation>dde उपकरण फॉरमेटर</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
         <source>Device does not exist</source>
-        <translation>उपकरण अस्तित्व नाही</translation>
+        <translation>उपकरण अस्तित्वात नाही</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>उपकरण अलीकडे वाचण्यासाठी वाचण्यासाठी वाचत नाही</translation>
+        <translation>उपकरण अलिकाच वाचता येत आहे</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,7 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>हा डिस्क वरील सर्व डेटा नष्ट होईल, तुम्ही आणखी चालू ठेवायचे आहे का? तो पुन्हा निर्माण केला जाऊ शकत नाही.</translation>
+        <translation>फॉरमेट करण्याने या डिस्क वरील सर्व डेटा नष्ट होईल, आपण विस्तार करायचे खालील आहे? ती परत नाही करता येईल.</translation>
     </message>
 </context>
 </TS>

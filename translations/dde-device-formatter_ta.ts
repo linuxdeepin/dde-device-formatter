@@ -32,12 +32,12 @@
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
         <source>Quick Format</source>
-        <translation>மென்மையான வடிவமைக்க</translation>
+        <translation>விரைவான வடிவமைப்பு</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>வடிவமைப்பு இந்த டிஸ்கில் உள்ள அனைத்து பெட்டியையும் நீக்கும்</translation>
+        <translation>வடிவமைப்பு தொடர்புடைய தடம் மீது அனைத்து தரவுகளையும் நீக்கும்.</translation>
     </message>
 </context>
 <context>
@@ -45,7 +45,7 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="68"/>
         <source>Format</source>
-        <translation>வடிவமைக்க</translation>
+        <translation>வடிவமை</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="250"/>
@@ -55,32 +55,32 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="256"/>
         <source>Formatting...</source>
-        <translation>வடிவமைப்பு...</translation>
+        <translation>வடிவமைத்தல்...</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="290"/>
         <source>Done</source>
-        <translation>செய்து முடித்துள்ளேன்</translation>
+        <translation>செய்து முடித்துள்ளீர்கள்</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="303"/>
         <source>Quit</source>
-        <translation>முடிக்க</translation>
+        <translation>முடிவுக்கு</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>உங்கள் டிஸ்க் நீக்கப்பட்டுள்ளது</translation>
+        <translation>உங்கள் தடம் நீக்கப்பட்டுள்ளது</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>உபகரணத்தை வடிவமைக்க வேண்டும்</translation>
+        <translation>உபகரணம் வடிவமைக்க வேண்டும் என்று வேலை செய்ய கூடாது</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
         <source>Reformat</source>
-        <translation>மீண்டும் வடிவமைக்க</translation>
+        <translation>மீண்டும் வடிவமை</translation>
     </message>
 </context>
 <context>
@@ -96,17 +96,17 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="40"/>
         <source>System Disk</source>
-        <translation>முதல் டிஸ்க்</translation>
+        <translation>முதன்மை தடம்</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 பாதுகாக்கப்பட்டுள்ளது'</translation>
+        <translation>&apos;%1 தடம் பாதுகாக்கப்பட்டுள்ளது&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 பகுதி'</translation>
+        <translation>&apos;%1 தடம்&apos;</translation>
     </message>
 </context>
 <context>
@@ -124,7 +124,7 @@
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>உபகரணம் மட்டுமே படிக்க முடியும்</translation>
+        <translation>உபகரணம் மடிக்கப்பட்டுள்ளது</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,8 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>இந்த டிஸ்கில் உள்ள அனைத்து தகவல்களும் நீக்கப்படும், தொடர விரும்புகிறீர்களா? இது மீட்டருவதற்கு முடியாது.</translation>
+        <translation>&gt;-
+வடிவமைப்பு இந்த தடம் மீது அனைத்து தரவுகளையும் நீக்கும், தொடர விரும்புகிறீர்களா? இது மீட்டு பெற முடியாது.</translation>
     </message>
 </context>
 </TS>

@@ -14,7 +14,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>Đang định dạng đĩa, vui lòng chờ...</translation>
+        <translation>Đang định dạng ổ đĩa, vui lòng chờ...</translation>
     </message>
 </context>
 <context>
@@ -37,7 +37,7 @@
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>Định dạng sẽ xóa toàn bộ dữ liệu trên đĩa.</translation>
+        <translation>Định dạng sẽ xóa toàn bộ dữ liệu trên ổ đĩa.</translation>
     </message>
 </context>
 <context>
@@ -88,7 +88,7 @@
     <message>
         <location filename="../dialogs/messagedialog.cpp" line="23"/>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation>Đồng ý</translation>
     </message>
 </context>
 <context>
@@ -101,12 +101,12 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 Mã hóa'</translation>
+        <translation>&apos;%1 Đã mã hóa&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 Thể tích'</translation>
+        <translation>&apos;%1 Thể tích&apos;</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,8 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>Định dạng sẽ xóa toàn bộ dữ liệu trên ổ đĩa này, bạn có chắc muốn tiếp tục không? Dữ liệu không thể phục hồi.</translation>
+        <translation>&gt;-
+Định dạng sẽ xóa toàn bộ dữ liệu trên ổ đĩa này, bạn có chắc chắn muốn tiếp tục không? Nó không thể khôi phục.</translation>
     </message>
 </context>
 </TS>

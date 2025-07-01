@@ -27,7 +27,7 @@
     <message>
         <location filename="../view/mainpage.cpp" line="117"/>
         <source>Label</source>
-        <translation>ชื่อ</translation>
+        <translation>ชื่อแผ่น</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
@@ -70,7 +70,7 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>แผ่นดิสก์ของคุณถูกถอดออกแล้ว</translation>
+        <translation>แผ่นดิสก์ของคุณถูกถอดออก</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
@@ -101,12 +101,12 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 ถูกเข้ารหัส'</translation>
+        <translation>&apos;%1 ถูกเข้ารหัส&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 ชื่อแผ่น'</translation>
+        <translation>&apos;%1 ปริมาณ&apos;</translation>
     </message>
 </context>
 <context>
@@ -114,7 +114,7 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde device formatter</translation>
+        <translation>dde ผู้จัดรูปแบบอุปกรณ์</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
@@ -124,7 +124,7 @@
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>อุปกรณ์นี้อยู่ในโหมดอ่านเท่านั้น</translation>
+        <translation>อุปกรณ์อยู่ในการอ่านเท่านั้น</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,8 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>การจัดรูปแบบจะลบข้อมูลทั้งหมดบนแผ่นดิสก์นี้ คุณแน่ใจว่าต้องการดำเนินการต่อหรือไม่? ข้อมูลจะไม่สามารถกู้คืนได้</translation>
+        <translation>&gt;-
+การจัดรูปแบบจะลบข้อมูลทั้งหมดบนแผ่นดิสก์นี้ คุณแน่ใจหรือไม่ว่าต้องการดำเนินการต่อ? ข้อมูลจะไม่สามารถกู้คืนได้</translation>
     </message>
 </context>
 </TS>

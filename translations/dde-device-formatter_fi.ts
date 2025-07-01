@@ -70,7 +70,11 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>HDD:n poistettiin</translation>
+        <translation>Hakemiston varasto on poistettu</translation>
+    </message>
+    <message>
+        <source>Your disk is removed when formatting</source>
+        <translation type="vanished">Levy poistetaan alustettaessa</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
@@ -114,7 +118,7 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde laitteen muokkuri</translation>
+        <translation>dde laitteen muotoilija</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
@@ -124,7 +128,11 @@
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>Laitteella on vain lukukäyttö</translation>
+        <translation>Laitteella on vain-luku-tila</translation>
+    </message>
+    <message>
+        <source>Cannot format local device</source>
+        <translation type="vanished">Paikallista laitetta ei voi alustaa</translation>
     </message>
 </context>
 <context>

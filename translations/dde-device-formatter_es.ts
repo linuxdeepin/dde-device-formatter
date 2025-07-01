@@ -74,6 +74,10 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
+        <source>Your disk is removed when formatting</source>
+        <translation type="vanished">El disco se quitará al formatear</translation>
+    </message>
+    <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
         <translation>No se ha podido formatear el dispositivo</translation>
@@ -126,6 +130,10 @@
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
         <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <source>Cannot format local device</source>
+        <translation type="vanished">No se puede formatear el dispositivo local</translation>
     </message>
 </context>
 <context>

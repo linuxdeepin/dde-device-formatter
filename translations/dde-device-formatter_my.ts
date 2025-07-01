@@ -6,7 +6,7 @@
     <message>
         <location filename="../view/finishpage.cpp" line="22"/>
         <source>Format successful</source>
-        <translation>การจัดรูปแบบสำเร็จ</translation>
+        <translation>အမှုပြုရေးအောင်မြင်ပါသည်</translation>
     </message>
 </context>
 <context>
@@ -14,7 +14,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>กำลังจัดรูปแบบดิสก์ กรุณารอสักครู่...</translation>
+        <translation>ဒီဗိုလ်လေးကို အမှုပြုနေပါသည်၊ စောင့်ပါ...</translation>
     </message>
 </context>
 <context>
@@ -22,22 +22,22 @@
     <message>
         <location filename="../view/mainpage.cpp" line="99"/>
         <source>Type</source>
-        <translation>ประเภท</translation>
+        <translation>အမျိုးအစား</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="117"/>
         <source>Label</source>
-        <translation>ชื่อ</translation>
+        <translation>ယား</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
         <source>Quick Format</source>
-        <translation>การจัดรูปแบบเร็ว</translation>
+        <translation>အမြန်အမှုပြုမှု</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>การจัดรูปแบบจะลบข้อมูลทั้งหมดในดิสก์</translation>
+        <translation>အမှုပြုမှုသည် ဒီဗိုလ်လေးပေါ်ရှိ အမှုပြုမှုကို ဖျက်ပါမည်။</translation>
     </message>
 </context>
 <context>
@@ -45,42 +45,42 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="68"/>
         <source>Format</source>
-        <translation>จัดรูปแบบ</translation>
+        <translation>အမှုပြုမှု</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="250"/>
         <source>Continue</source>
-        <translation>ดำเนินการต่อ</translation>
+        <translation>ဆက်လုပ်ရန်</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="256"/>
         <source>Formatting...</source>
-        <translation>กำลังจัดรูปแบบ...</translation>
+        <translation>အမှုပြုနေပါသည်...</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="290"/>
         <source>Done</source>
-        <translation>เสร็จสิ้น</translation>
+        <translation>ပြီးပါပြီ</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="303"/>
         <source>Quit</source>
-        <translation>ออก</translation>
+        <translation>ပိတ်ပါ</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>ดิสก์ของคุณถูกถอดออกแล้ว</translation>
+        <translation>သင့် ဒီဗိုလ်လေးကို ဖျက်ပြီးပါပြီ</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>ไม่สามารถจัดรูปแบบอุปกรณ์ได้</translation>
+        <translation>အမှုပြုမှုကို ဖျက်ရာတွင် ကျော်လွန်ခဲ့ပါသည်</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
         <source>Reformat</source>
-        <translation>จัดรูปแบบใหม่</translation>
+        <translation>အမှုပြုသည်</translation>
     </message>
 </context>
 <context>
@@ -88,7 +88,7 @@
     <message>
         <location filename="../dialogs/messagedialog.cpp" line="23"/>
         <source>OK</source>
-        <translation>ตกลง</translation>
+        <translation>အောင်မြင်ပါသည်</translation>
     </message>
 </context>
 <context>
@@ -96,17 +96,17 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="40"/>
         <source>System Disk</source>
-        <translation>ดิสก์ระบบ</translation>
+        <translation>Disk စနစ်</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 ถูกเข้ารหัส'</translation>
+        <translation>&apos;%1 ကာကွယ်ထားသည်&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 ปริมาณ'</translation>
+        <translation>&apos;%1 အမှတ်&apos;</translation>
     </message>
 </context>
 <context>
@@ -114,17 +114,17 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde device formatter</translation>
+        <translation>dde အမှုပြုသည်</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
         <source>Device does not exist</source>
-        <translation>อุปกรณ์ไม่มีอยู่</translation>
+        <translation>အမှုပြုရာတွင် ကိရိယာ မရှိပါ</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>อุปกรณ์เป็นแบบอ่าน-only</translation>
+        <translation>အမှုပြုရာတွင် ကိရိယာ ဖောင်းဖောင်းပါ</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,8 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>การจัดรูปแบบจะลบข้อมูลทั้งหมดในดิสก์นี้ คุณแน่ใจว่าต้องการดำเนินการต่อหรือไม่? ข้อมูลจะไม่สามารถกู้คืนได้</translation>
+        <translation>&gt;-
+  ဒီဗိုလ်လေးပေါ်ရှိ အမှုပြုမှုသည် အမှုပြုမှုကို ဖျက်ပါမည်။ သင်သည် ဆက်လုပ်ရန် သေချာပါသလား။ အမှုပြုမှုကို ပြန်လည်ပြုလုပ်ရန် မဖြစ်နိုင်ပါ</translation>
     </message>
 </context>
 </TS>

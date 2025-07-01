@@ -14,7 +14,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>ഡിസ്ക് ഫോർമാറ്റ് ചെയ്യുക, പ്രതീക്ഷിക്കുക...</translation>
+        <translation>ഡിസ്ക് ഫോർമാറ്റ് ചെയ്യുന്നു, വേണിക്കുക...</translation>
     </message>
 </context>
 <context>
@@ -27,7 +27,7 @@
     <message>
         <location filename="../view/mainpage.cpp" line="117"/>
         <source>Label</source>
-        <translation>ലേബൽ</translation>
+        <translation>ലാബല്‍</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
@@ -37,7 +37,7 @@
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>ഫോർമാറ്റിംഗ് ഡിസ്കിലെ എല്ലാ ഡാറ്റയും മായ്ക്കും.</translation>
+        <translation>ഫോർമാറ്റ് ചെയ്യുന്നത് ഡിസ്കിലെ എല്ലാ ഡാറ്റയും അപ്പോൾ പുറത്തെടുക്കുന്നു.</translation>
     </message>
 </context>
 <context>
@@ -50,37 +50,37 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="250"/>
         <source>Continue</source>
-        <translation>പുനരാരംഭം</translation>
+        <translation>പുലര്‍ത്തുക</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="256"/>
         <source>Formatting...</source>
-        <translation>ഫോർമാറ്റിംഗ്...</translation>
+        <translation>ഫോർമാറ്റ് ചെയ്യുന്നു...</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="290"/>
         <source>Done</source>
-        <translation>വിജയിച്ചു</translation>
+        <translation>ചെയ്തു</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="303"/>
         <source>Quit</source>
-        <translation>നിർത്തു</translation>
+        <translation>പുറത്തേക്ക്</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>നിങ്ങളുടെ ഡിസ്ക് നീക്കം ചെയ്തിരിക്കുന്നു</translation>
+        <translation>നിങ്ങളുടെ ഡിസ്ക് അപ്പോൾ നിലച്ചിട്ടില്ല</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>ഡിവൈസ് ഫോർമാറ്റ് ചെയ്യാൻ കഴിയില്ല</translation>
+        <translation>ഡിവൈസ് ഫോർമാറ്റ് ചെയ്യാൻ കഴിയാത്തത്</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
         <source>Reformat</source>
-        <translation>പുനർഫോർമാറ്റ്</translation>
+        <translation>പുനഃഫോർമാറ്റ്</translation>
     </message>
 </context>
 <context>
@@ -88,7 +88,7 @@
     <message>
         <location filename="../dialogs/messagedialog.cpp" line="23"/>
         <source>OK</source>
-        <translation>ഓക്കെ</translation>
+        <translation>ഓ.കെ.</translation>
     </message>
 </context>
 <context>
@@ -101,12 +101,12 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 എൻക്രിപ്റ്റ് ചെയ്തിരിക്കുന്നു'</translation>
+        <translation>&apos;%1 എൻക്രിപ്റ്റ് ചെയ്തിട്ടുണ്ട്&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 വോളൂം'</translation>
+        <translation>&apos;%1 വോളൂം&apos;</translation>
     </message>
 </context>
 <context>
@@ -124,7 +124,7 @@
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>ഡിവൈസ് പഠിക്കാൻ പുറത്ത് കഴിയില്ല</translation>
+        <translation>ഡിവൈസ് പഠിക്കാൻ കഴിയാത്തത്</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,8 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>ഫോർമാറ്റിംഗ് ഈ ഡിസ്കിലെ എല്ലാ ഡാറ്റയും മായ്ക്കും. നിങ്ങൾ പുനരാരംഭം ചെയ്യാൻ തയാറാണോ? ഇത് പുനരധിവേശം ചെയ്യാൻ കഴിയില്ല.</translation>
+        <translation>&gt;-
+  ഫോർമാറ്റ് ചെയ്യുന്നത് ഈ ഡിസ്കിലെ എല്ലാ ഡാറ്റയും അപ്പോൾ പുറത്തെടുക്കുന്നു, നിങ്ങൾ പുലര്‍ത്താൻ തീരുമാനിച്ചിട്ടുണ്ടോ? ഇത് പുനഃനിലനിർത്താൻ കഴിയില്ല.</translation>
     </message>
 </context>
 </TS>

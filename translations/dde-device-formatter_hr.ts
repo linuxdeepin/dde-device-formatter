@@ -32,12 +32,12 @@
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
         <source>Quick Format</source>
-        <translation>Brzi format</translation>
+        <translation>Brzo formatiranje</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>Formatiranje će izbrisati sve podatke s diska.</translation>
+        <translation>Formatiranje će izbrisati sve podatke na disku.</translation>
     </message>
 </context>
 <context>
@@ -73,9 +73,13 @@
         <translation>Vaš disk je uklonjen</translation>
     </message>
     <message>
+        <source>Your disk is removed when formatting</source>
+        <translation type="vanished">Nakon formatiranja vaš disk je uklonjen</translation>
+    </message>
+    <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>Formatiranje uređaja nije uspješno</translation>
+        <translation>Formatiranje uređaja nije uspjelo</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
@@ -96,17 +100,17 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="40"/>
         <source>System Disk</source>
-        <translation>Sustavni disk</translation>
+        <translation>Sustavski disk</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>%1 šifrirano</translation>
+        <translation>&apos;%1 zaštićen&apos;</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>%1 volumen</translation>
+        <translation>&apos;%1 volumen&apos;</translation>
     </message>
 </context>
 <context>
@@ -114,7 +118,7 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde uređaj za formatiranje</translation>
+        <translation>dde uređaj formatirao</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
@@ -126,13 +130,19 @@
         <source>The device is read-only</source>
         <translation>Uređaj je samo za čitanje</translation>
     </message>
+    <message>
+        <source>Cannot format local device</source>
+        <translation type="vanished">Ne mogu formatirati lokalni uređaj</translation>
+    </message>
 </context>
 <context>
     <name>WarnPage</name>
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>Formatiranje će izbrisati sve podatke na ovom disku, sigurno želite nastaviti? Ne može se obnoviti.</translation>
+        <translation>&gt;-
+Formatiranje će izbrisati sve podatke na ovom disku, sigurno želite nastaviti?
+Ne može se vraćati.</translation>
     </message>
 </context>
 </TS>

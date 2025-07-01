@@ -6,7 +6,7 @@
     <message>
         <location filename="../view/finishpage.cpp" line="22"/>
         <source>Format successful</source>
-        <translation>فرمەتکردن باشکەسیلیت</translation>
+        <translation>بەرەوەیەتەکە بەرەوەیەت</translation>
     </message>
 </context>
 <context>
@@ -14,7 +14,7 @@
     <message>
         <location filename="../view/formatingpage.cpp" line="29"/>
         <source>Formatting the disk, please wait...</source>
-        <translation>فرمەتکردنەوە دویشکە، لە چەکەوە...</translation>
+        <translation>دەرەوەیەتەکە بەرەوەیەت، بەرەوەیەت بکەرەوەیەت</translation>
     </message>
 </context>
 <context>
@@ -22,7 +22,7 @@
     <message>
         <location filename="../view/mainpage.cpp" line="99"/>
         <source>Type</source>
-        <translation>نوع</translation>
+        <translation>نەم</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="117"/>
@@ -32,12 +32,12 @@
     <message>
         <location filename="../view/mainpage.cpp" line="127"/>
         <source>Quick Format</source>
-        <translation>فرمەتکردنی سریع</translation>
+        <translation>بەرەوەیەتی سەرەکی</translation>
     </message>
     <message>
         <location filename="../view/mainpage.cpp" line="144"/>
         <source>Formatting will erase all data on the disk.</source>
-        <translation>فرمەتکردنەوە دویشکە داتاکە ئەوە دویشکە بەکەسیلیت</translation>
+        <translation>بەرەوەیەتەکە دەتوانێت کۆلەیەتی دەرەوەیەتەکە بەرەوەیەت بکەرەوەیەت</translation>
     </message>
 </context>
 <context>
@@ -45,42 +45,42 @@
     <message>
         <location filename="../view/mainwindow.cpp" line="68"/>
         <source>Format</source>
-        <translation>فرمەتکردن</translation>
+        <translation>بەرەوەیەت</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="250"/>
         <source>Continue</source>
-        <translation>بەکەردن</translation>
+        <translation>بەرەوەیەت بکەرەوەیەت</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="256"/>
         <source>Formatting...</source>
-        <translation>فرمەتکردنەوە...</translation>
+        <translation>بەرەوەیەت بکەرەوەیەت</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="290"/>
         <source>Done</source>
-        <translation>تواند</translation>
+        <translation>بەرەوەیەت</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="303"/>
         <source>Quit</source>
-        <translation>پەرەچەوە</translation>
+        <translation>تەنگ کردن</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="304"/>
         <source>Your disk has been removed</source>
-        <translation>دویشکە شما بەکەرەوە</translation>
+        <translation>دەرەوەیەتەکە شۆڕ کردنەوە</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="308"/>
         <source>Failed to format the device</source>
-        <translation>فرمەتکردنەوە دویشکە باشکەسیلیت</translation>
+        <translation>دەرەوەیەتەکە بەرەوەیەت نەکردنەوە</translation>
     </message>
     <message>
         <location filename="../view/mainwindow.cpp" line="309"/>
         <source>Reformat</source>
-        <translation>بەرەوە فرمەتکردن</translation>
+        <translation>بەرەوەیەت دووبارە</translation>
     </message>
 </context>
 <context>
@@ -88,7 +88,7 @@
     <message>
         <location filename="../dialogs/messagedialog.cpp" line="23"/>
         <source>OK</source>
-        <translation>OK</translation>
+        <translation>بەرەوەیەت</translation>
     </message>
 </context>
 <context>
@@ -96,17 +96,17 @@
     <message>
         <location filename="../utils/udisksutils.cpp" line="40"/>
         <source>System Disk</source>
-        <translation>دیسکی سیستم</translation>
+        <translation>سیستەم دەرەوەیەت</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="46"/>
         <source>%1 Encrypted</source>
-        <translation>'%1 بەکەسیلیت</translation>
+        <translation>%1 بەرەوەیەت کردنەوە</translation>
     </message>
     <message>
         <location filename="../utils/udisksutils.cpp" line="50"/>
         <source>%1 Volume</source>
-        <translation>'%1 ئەتەت</translation>
+        <translation>%1 ئەتەت</translation>
     </message>
 </context>
 <context>
@@ -114,17 +114,17 @@
     <message>
         <location filename="../main.cpp" line="80"/>
         <source>dde device formatter</source>
-        <translation>dde فرمەتکردنەوە دویشکە</translation>
+        <translation>dde دەرەوەیەت کردنەوە</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="97"/>
         <source>Device does not exist</source>
-        <translation>دویشکە دەکەسیلیت</translation>
+        <translation>دەرەوەیەت نەدەوە</translation>
     </message>
     <message>
         <location filename="../main.cpp" line="107"/>
         <source>The device is read-only</source>
-        <translation>دویشکە بەکەسیلیت</translation>
+        <translation>دەرەوەیەت ڕەد ئۆڵەوە</translation>
     </message>
 </context>
 <context>
@@ -132,7 +132,7 @@
     <message>
         <location filename="../view/warnpage.cpp" line="23"/>
         <source>Formatting will erase all data on this disk, are you sure you want to continue? It cannot be restored.</source>
-        <translation>فرمەتکردنەوە دویشکە داتاکە ئەوە دویشکە بەکەسیلیت، هەڵەوە هەر کەرەوە بەکەردن؟ ئەو دەکەسیلیت بەکەردنەوە</translation>
+        <translation>بەرەوەیەتەکە دەتوانێت کۆلەیەتی دەرەوەیەتەکە بەرەوەیەت بکەرەوەیەت، ئەگەر بەرەوەیەت بکەرەوەیەتەوە؟ ئەو نەدەتوانێت بەرەوەیەت بکردنەوە</translation>
     </message>
 </context>
 </TS>
