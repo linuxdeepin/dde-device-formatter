@@ -187,7 +187,7 @@ void MainWindow::formatDevice()
                 return;
             }
         }
-        QVariantMap opt = { { "label", m_mainPage->getLabel() } };
+        QVariantMap opt = { { "label", m_mainPage->getLabel() }, { "take-ownership", true } };
         if (m_mainPage->shouldErase()) opt["erase"] = "zero";
         blk->format(m_mainPage->getSelectedFs(), opt);
         QDBusError lastError = blk->lastError();

@@ -1,1 +1,5 @@
 *.user
+.cursor/*
+.cache/*
+.claude/*
+build/*

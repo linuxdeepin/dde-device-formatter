@@ -1,3 +1,11 @@
+dde-device-formatter (0.0.1.18) unstable; urgency=medium
+
+  * take disk ownership after formatted.
+  * 
+  * 
+
+ -- XuShitong <xushitong@uniontech.com>  Sat, 26 Jul 2025 15:52:40 +0800
+
 dde-device-formatter (0.0.1.17) unstable; urgency=medium
 
   * Auto mount after device been formatted.
