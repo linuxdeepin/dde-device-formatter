@@ -10,11 +10,25 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 # 包含 GNUInstallDirs，用于获取标准安装路径
 include(GNUInstallDirs)
 
+# Find Qt version
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Core)
+message("   >>> Found Qt version: ${QT_VERSION_MAJOR}")
+
+if (QT_VERSION_MAJOR MATCHES 6)
+    set(DTK_VERSION_MAJOR 6)
+else()
+    set(DTK_VERSION_MAJOR "")
+endif()
+
 # 查找必要的包
-find_package(Qt6 COMPONENTS Core Gui Widgets Concurrent Network DBus LinguistTools REQUIRED)
-find_package(Dtk6 COMPONENTS Widget Gui REQUIRED)
-find_package(udisks2-qt6 REQUIRED)
+set(QT_COMPONENTS Core Gui Widgets Concurrent Network DBus LinguistTools)
+if (QT_VERSION_MAJOR MATCHES 5)
+    list(APPEND QT_COMPONENTS X11Extras)
+endif()
+find_package(Qt${QT_VERSION_MAJOR} COMPONENTS ${QT_COMPONENTS} REQUIRED)
+find_package(Dtk${DTK_VERSION_MAJOR} COMPONENTS Widget Gui REQUIRED)
 find_package(PkgConfig REQUIRED)
+pkg_check_modules(UDISKS2QT REQUIRED IMPORTED_TARGET udisks2-qt${QT_VERSION_MAJOR})
 pkg_check_modules(PKGS REQUIRED
     x11
 )
@@ -52,20 +66,39 @@ set(HEADERS
 # 设置翻译文件
 file(GLOB TS_FILES "${CMAKE_CURRENT_SOURCE_DIR}/translations/${PROJECT_NAME}*.ts")
 
-# 使用 Qt 提供的翻译工具
-qt_add_translations(${PROJECT_NAME}
-    # 指定翻译源文件
-    TS_FILES ${TS_FILES}
-    # 指定 QM 文件输出变量
-    QM_FILES_OUTPUT_VARIABLE QM_FILES
-    # 指定源文件，用于更新翻译
-    SOURCES ${SOURCES} ${HEADERS}
-    # 指定 LRELEASE 选项
-    LRELEASE_OPTIONS
-        -compress
-        -nounfinished
-        -removeidentical
-)
+# 根据 Qt 版本使用不同的翻译工具
+if (QT_VERSION_MAJOR MATCHES 6)
+    # Qt6 使用 qt_add_translations
+    qt_add_translations(${PROJECT_NAME}
+        # 指定翻译源文件
+        TS_FILES ${TS_FILES}
+        # 指定 QM 文件输出变量
+        QM_FILES_OUTPUT_VARIABLE QM_FILES
+        # 指定源文件，用于更新翻译
+        SOURCES ${SOURCES} ${HEADERS}
+        # 指定 LRELEASE 选项
+        LRELEASE_OPTIONS
+            -compress
+            -nounfinished
+            -removeidentical
+    )
+else()
+    # Qt5 手动生成 QM 文件
+    find_program(QT_LRELEASE_EXECUTABLE NAMES lrelease-qt5 lrelease)
+    set(QM_FILES)
+    foreach(TS_FILE ${TS_FILES})
+        get_filename_component(TS_FILE_NAME ${TS_FILE} NAME_WE)
+        set(QM_FILE "${CMAKE_CURRENT_BINARY_DIR}/${TS_FILE_NAME}.qm")
+        add_custom_command(
+            OUTPUT ${QM_FILE}
+            COMMAND ${QT_LRELEASE_EXECUTABLE} -compress -nounfinished -removeidentical ${TS_FILE} -qm ${QM_FILE}
+            DEPENDS ${TS_FILE}
+            COMMENT "Generating ${QM_FILE} from ${TS_FILE}"
+        )
+        list(APPEND QM_FILES ${QM_FILE})
+    endforeach()
+    add_custom_target(translations ALL DEPENDS ${QM_FILES})
+endif()
 
 # 在文件开头部分添加自动 moc 处理
 set(CMAKE_AUTOMOC ON)
@@ -79,22 +112,30 @@ add_executable(${PROJECT_NAME} ${SOURCES} ${HEADERS})
 target_include_directories(${PROJECT_NAME} PRIVATE
     ${CMAKE_CURRENT_SOURCE_DIR}
     ${PKGS_INCLUDE_DIRS}
+    ${UDISKS2QT_INCLUDE_DIRS}
 )
 
 # 链接库
 target_link_libraries(${PROJECT_NAME} PRIVATE
-    Qt6::Core
-    Qt6::Gui
-    Qt6::GuiPrivate
-    Qt6::Widgets
-    Qt6::Concurrent
-    Qt6::Network
-    Qt6::DBus
-    Dtk6::Widget
-    Dtk6::Gui
-    udisks2-qt6::udisks2-qt6
+    Qt${QT_VERSION_MAJOR}::Core
+    Qt${QT_VERSION_MAJOR}::Gui
+    Qt${QT_VERSION_MAJOR}::GuiPrivate
+    Qt${QT_VERSION_MAJOR}::Widgets
+    Qt${QT_VERSION_MAJOR}::Concurrent
+    Qt${QT_VERSION_MAJOR}::Network
+    Qt${QT_VERSION_MAJOR}::DBus
+    Dtk${DTK_VERSION_MAJOR}::Widget
+    Dtk${DTK_VERSION_MAJOR}::Gui
+    PkgConfig::UDISKS2QT
     ${PKGS_LIBRARIES}
 )
+
+# Qt5 需要链接 X11Extras
+if (QT_VERSION_MAJOR MATCHES 5)
+    target_link_libraries(${PROJECT_NAME} PRIVATE
+        Qt${QT_VERSION_MAJOR}::X11Extras
+    )
+endif()
 
 # 添加编译选项
 target_compile_options(${PROJECT_NAME} PRIVATE ${PKGS_CFLAGS_OTHER})
@@ -103,21 +144,21 @@ target_compile_options(${PROJECT_NAME} PRIVATE ${PKGS_CFLAGS_OTHER})
 set(TRANSLATIONS_INSTALL_DIR "${CMAKE_INSTALL_FULL_DATADIR}/${PROJECT_NAME}/translations")
 
 # 添加编译定义，传递安装路径到代码中
-target_compile_definitions(${PROJECT_NAME} PRIVATE 
+target_compile_definitions(${PROJECT_NAME} PRIVATE
     "TRANSLATIONS_DIR=\"${TRANSLATIONS_INSTALL_DIR}\""
 )
 
 # 安装目标
-install(TARGETS ${PROJECT_NAME} 
+install(TARGETS ${PROJECT_NAME}
     RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
 )
 
 # 安装翻译文件
-install(FILES ${QM_FILES} 
+install(FILES ${QM_FILES}
     DESTINATION ${CMAKE_INSTALL_DATADIR}/${PROJECT_NAME}/translations
 )
 
 # 安装桌面文件
-install(FILES dde-device-formatter.desktop 
+install(FILES dde-device-formatter.desktop
     DESTINATION ${CMAKE_INSTALL_DATADIR}/applications
-) 
+)

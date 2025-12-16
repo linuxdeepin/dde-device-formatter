@@ -20,7 +20,11 @@
 #include <X11/Xlib.h>
 #include <QGuiApplication>
 #include <QScreen>
+#if QT_VERSION >= QT_VERSION_CHECK(6, 0, 0)
 #include <QtGui/private/qtx11extras_p.h>
+#else
+#include <QX11Info>
+#endif
 
 DCORE_USE_NAMESPACE
 
@@ -29,7 +33,7 @@ DCORE_USE_NAMESPACE
 int main(int argc, char *argv[])
 {
     qDebug() << "Main: Starting dde-device-formatter application";
-    
+
     // 设置Deepin平台主题
     if (qgetenv("QT_QPA_PLATFORMTHEME").isEmpty()) {
         qputenv("QT_QPA_PLATFORMTHEME", "deepin");
@@ -131,7 +135,7 @@ int main(int argc, char *argv[])
     }
 
     int code = a.exec();
-    
+
     qDebug() << "Main: Performing quick exit";
     quick_exit(code);
 }
