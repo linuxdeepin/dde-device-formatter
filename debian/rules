@@ -1,13 +1,21 @@
 #!/usr/bin/make -f
 
-export QT_SELECT=5
 include /usr/share/dpkg/default.mk
-
 DEB_BUILD_ARCH ?= $(shell dpkg-architecture -qDEB_BUILD_ARCH)
+
+# 检测当前安装的Qt版本，优先使用Qt6，否则使用Qt5
+define detect_qt_version
+ifneq (,$(shell which qmake6 2>/dev/null))
+    QT_DIR="/usr/lib/$(DEB_HOST_MULTIARCH)/cmake/Qt6"
+else
+    QT_DIR="/usr/lib/$(DEB_HOST_MULTIARCH)/cmake/Qt5"
+endif
+endef
+
 export DEB_LDFLAGS_APPEND = -Wl,-z,now
 
 %:
 	dh $@ --parallel
 
 override_dh_auto_configure:
-	dh_auto_configure -- VERSION=$(VERSION) LIB_INSTALL_DIR=/usr/lib/$(DEB_HOST_MULTIARCH) DEFINES+="VERSION=$(DEB_VERSION_UPSTREAM)"
+	dh_auto_configure -- VERSION=$(VERSION) LIB_INSTALL_DIR=/usr/lib/$(DEB_HOST_MULTIARCH) DEFINES+="VERSION=$(DEB_VERSION_UPSTREAM)" QT_DIR=$(QT_DIR)
