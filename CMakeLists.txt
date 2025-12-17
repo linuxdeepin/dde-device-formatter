@@ -90,12 +90,13 @@ else()
         set(QM_FILE "${CMAKE_CURRENT_BINARY_DIR}/${TS_FILE_NAME}.qm")
         add_custom_command(
             OUTPUT ${QM_FILE}
-            COMMAND lrelease ${TS_FILE} -qm ${QM_FILE}
+            COMMAND lrelease -compress -nounfinished -removeidentical ${TS_FILE} -qm ${QM_FILE}
             DEPENDS ${TS_FILE}
             COMMENT "Generating ${QM_FILE} from ${TS_FILE}"
         )
         list(APPEND QM_FILES ${QM_FILE})
     endforeach()
+    add_custom_target(generate_qm ALL DEPENDS ${QM_FILES})
 endif()
 
 # 在文件开头部分添加自动 moc 处理
