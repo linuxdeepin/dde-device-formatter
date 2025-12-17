@@ -84,20 +84,18 @@ if (QT_VERSION_MAJOR MATCHES 6)
     )
 else()
     # Qt5 手动生成 QM 文件
-    find_program(QT_LRELEASE_EXECUTABLE NAMES lrelease-qt5 lrelease)
     set(QM_FILES)
     foreach(TS_FILE ${TS_FILES})
         get_filename_component(TS_FILE_NAME ${TS_FILE} NAME_WE)
         set(QM_FILE "${CMAKE_CURRENT_BINARY_DIR}/${TS_FILE_NAME}.qm")
         add_custom_command(
             OUTPUT ${QM_FILE}
-            COMMAND ${QT_LRELEASE_EXECUTABLE} -compress -nounfinished -removeidentical ${TS_FILE} -qm ${QM_FILE}
+            COMMAND lrelease ${TS_FILE} -qm ${QM_FILE}
             DEPENDS ${TS_FILE}
             COMMENT "Generating ${QM_FILE} from ${TS_FILE}"
         )
         list(APPEND QM_FILES ${QM_FILE})
     endforeach()
-    add_custom_target(translations ALL DEPENDS ${QM_FILES})
 endif()
 
 # 在文件开头部分添加自动 moc 处理
