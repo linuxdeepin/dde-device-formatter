@@ -1,3 +1,9 @@
+dde-device-formatter (1.5.10) unstable; urgency=medium
+
+  * feat: add Qt5 and Qt6 dual version support
+
+ -- Liu Zhangjian <liuzhangjian@uniontech.com>  Wed, 17 Dec 2025 14:43:16 +0800
+
 dde-device-formatter (1.5.9) unstable; urgency=medium
 
   * chore: Update compiler flags for security enhancements
