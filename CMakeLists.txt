@@ -3,6 +3,8 @@ cmake_minimum_required(VERSION 3.13)
 # 设置项目名称和版本
 project(dde-device-formatter VERSION 1.0.0)
 
+set(CMAKE_POSITION_INDEPENDENT_CODE ON)
+
 # 设置 C++ 标准
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
@@ -138,6 +140,9 @@ endif()
 
 # 添加编译选项
 target_compile_options(${PROJECT_NAME} PRIVATE ${PKGS_CFLAGS_OTHER})
+
+# 添加链接选项
+target_link_options(${PROJECT_NAME} PRIVATE -pie)
 
 # 设置翻译文件路径
 set(TRANSLATIONS_INSTALL_DIR "${CMAKE_INSTALL_FULL_DATADIR}/${PROJECT_NAME}/translations")
