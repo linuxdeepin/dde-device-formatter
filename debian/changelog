@@ -1,3 +1,9 @@
+dde-device-formatter (1.5.11) unstable; urgency=medium
+
+  * fix: Fix sw64 gcc not support pie by default
+
+ -- wangrong <wangrong@uniontech.com>  Thu, 22 Jan 2026 19:08:56 +0800
+
 dde-device-formatter (1.5.10) unstable; urgency=medium
 
   * feat: add Qt5 and Qt6 dual version support
