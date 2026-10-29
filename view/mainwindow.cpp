@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2016 - 2022 UnionTech Software Technology Co., Ltd.
+// SPDX-FileCopyrightText: 2016 - 2026 UnionTech Software Technology Co., Ltd.
 //
 // SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -22,6 +22,7 @@
 #include <QMouseEvent>
 #include <QApplication>
 #include <QtConcurrent>
+#include <QProcess>
 #include <DWindowManagerHelper>
 #include "dialogs/messagedialog.h"
 #include "utils/udisksutils.h"
@@ -117,13 +118,28 @@ void MainWindow::initConnect()
             else if (m_job->operation().contains("mkfs")) {
                 QTimer *timer = new QTimer();
                 m_simulationProgressValue = 0;
+                m_watchdogRetryCount = 0;
                 connect(timer, &QTimer::timeout, [this, timer]() {
-                    m_simulationProgressValue += 0.06;
                     if (m_simulationProgressValue < 1) {
-                        timer->start(300);
-                        m_formatingPage->setProgress(m_simulationProgressValue);
+                        m_simulationProgressValue += 0.06;
+                        if (m_simulationProgressValue < 1) {
+                            m_formatingPage->setProgress(m_simulationProgressValue);
+                        } else {
+                            m_formatingPage->setProgress(0.99);
+                            timer->start(5000);
+                        }
                     } else {
-                        m_formatingPage->setProgress(0.99);
+                        int ret = QProcess::execute("pgrep", QStringList() << "-f" << QString("mkfs.*%1").arg(m_formatPath));
+                        if (ret == 1) {
+                            timer->stop();
+                            m_formatingPage->setProgress(1);
+                            disconnect(m_job.data(), &DUDisksJob::completed, nullptr, nullptr);
+                            this->onFormatingFinished(true);
+                        } else if (++m_watchdogRetryCount >= 60) {
+                            timer->stop();
+                            disconnect(m_job.data(), &DUDisksJob::completed, nullptr, nullptr);
+                            this->onFormatingFinished(false);
+                        }
                     }
                 });
                 timer->start(300);

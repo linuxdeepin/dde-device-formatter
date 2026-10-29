@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2016 - 2022 UnionTech Software Technology Co., Ltd.
+// SPDX-FileCopyrightText: 2016 - 2026 UnionTech Software Technology Co., Ltd.
 //
 // SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -85,6 +85,8 @@ private:
 
     //模拟进度值
     double m_simulationProgressValue;
+    //看门狗重试计数
+    int m_watchdogRetryCount = 0;
 };
 
 #endif // DIALOG_H
