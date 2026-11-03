@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2016 - 2022 UnionTech Software Technology Co., Ltd.
+// SPDX-FileCopyrightText: 2016 - 2026 UnionTech Software Technology Co., Ltd.
 //
 // SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -123,8 +123,9 @@ void MainWindow::initConnect()
                         timer->start(300);
                         m_formatingPage->setProgress(m_simulationProgressValue);
                     } else {
-                        m_formatingPage->setProgress(0.95);
+                        m_formatingPage->setProgress(0.96);
                         m_formatingPage->setHintText(tr("Creating file system, large capacity disks may take longer, please wait..."));
+                        timer->stop();
                     }
                 });
                 timer->start(300);
