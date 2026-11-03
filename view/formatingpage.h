@@ -7,6 +7,8 @@
 
 #include <QFrame>
 
+class QLabel;
+
 namespace Dtk {
 namespace Widget {
 class DWaterProgress;
@@ -20,10 +22,12 @@ public:
     explicit FormatingPage(QWidget *parent = 0);
     void initUI();
     void setProgress(double p);
+    void setHintText(const QString &text);
 
 public slots:
 private:
     Dtk::Widget::DWaterProgress* m_progressBox = NULL;
+    QLabel* m_hintLabel = nullptr;
 };
 
 #endif // FORMATINGPAGE_H

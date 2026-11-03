@@ -34,6 +34,14 @@ void FormatingPage::initUI()
     mainLayout->addWidget(m_progressBox, 0 , Qt::AlignHCenter);
     mainLayout->addSpacing(15);
     mainLayout->addWidget(formatingLabel, 0 , Qt::AlignHCenter);
+
+    m_hintLabel = new QLabel(this);
+    m_hintLabel->setObjectName("HintLabel");
+    m_hintLabel->setWordWrap(true);
+    m_hintLabel->setAlignment(Qt::AlignHCenter);
+    m_hintLabel->hide();
+    mainLayout->addWidget(m_hintLabel, 0, Qt::AlignHCenter);
+
     mainLayout->addStretch(1);
     setLayout(mainLayout);
 }
@@ -45,4 +53,12 @@ void FormatingPage::setProgress(double p)
         return;
     }
     m_progressBox->setValue(int(p * 100));
+}
+
+void FormatingPage::setHintText(const QString &text)
+{
+    if (m_hintLabel) {
+        m_hintLabel->setText(text);
+        m_hintLabel->show();
+    }
 }

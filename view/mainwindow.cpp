@@ -123,7 +123,8 @@ void MainWindow::initConnect()
                         timer->start(300);
                         m_formatingPage->setProgress(m_simulationProgressValue);
                     } else {
-                        m_formatingPage->setProgress(0.99);
+                        m_formatingPage->setProgress(0.95);
+                        m_formatingPage->setHintText(tr("Creating file system, large capacity disks may take longer, please wait..."));
                     }
                 });
                 timer->start(300);
