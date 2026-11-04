@@ -1,4 +1,4 @@
-// SPDX-FileCopyrightText: 2016 - 2022 UnionTech Software Technology Co., Ltd.
+// SPDX-FileCopyrightText: 2016-2026 UnionTech Software Technology Co., Ltd.
 //
 // SPDX-License-Identifier: GPL-3.0-or-later
 
@@ -124,6 +124,8 @@ void MainWindow::initConnect()
                         m_formatingPage->setProgress(m_simulationProgressValue);
                     } else {
                         m_formatingPage->setProgress(0.99);
+                        m_formatingPage->setHintText(tr("Large capacity disks may take longer"));
+                        timer->stop();
                     }
                 });
                 timer->start(300);
@@ -173,6 +175,9 @@ void MainWindow::initConnect()
 
 void MainWindow::formatDevice()
 {
+    // 失败重试时复用同一个格式化页面，需清掉上一轮残留的进度和提示
+    m_formatingPage->reset();
+
     DWindowManagerHelper::setMotifFunctions(windowHandle(), DWindowManagerHelper::FUNC_CLOSE, false);
     setCloseButtonVisible(false);
 
