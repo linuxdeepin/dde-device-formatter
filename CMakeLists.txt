@@ -28,6 +28,12 @@ if (QT_VERSION_MAJOR MATCHES 5)
     list(APPEND QT_COMPONENTS X11Extras)
 endif()
 find_package(Qt${QT_VERSION_MAJOR} COMPONENTS ${QT_COMPONENTS} REQUIRED)
+
+# Qt 6.10 起，私有模块目标(如 Qt6::GuiPrivate)拆分为独立的 CMake 包，不再随主模块自动创建，需显式查找；
+# 更早版本该目标由 Qt6GuiTargets.cmake 自动创建，无需额外处理
+if (QT_VERSION_MAJOR MATCHES 6 AND Qt6_VERSION VERSION_GREATER_EQUAL 6.10)
+    find_package(Qt6 REQUIRED COMPONENTS GuiPrivate)
+endif()
 find_package(Dtk${DTK_VERSION_MAJOR} COMPONENTS Widget Gui REQUIRED)
 find_package(PkgConfig REQUIRED)
 pkg_check_modules(UDISKS2QT REQUIRED IMPORTED_TARGET udisks2-qt${QT_VERSION_MAJOR})
